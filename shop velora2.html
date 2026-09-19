@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Velora - Shop</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    >
+
+    <!-- Velora 2 Style -->
+    <link rel="stylesheet" href="style velora2.css">
+</head>
+
+<body class="bg-black text-white">
+
+    <!-- ============================================
+         NAVBAR
+         ============================================ -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black py-3 border-bottom border-secondary">
+
+        <div class="container">
+
+            <a
+                class="navbar-brand fw-bold fs-3 text-gold tracking-widest"
+                href="index velora2.html"
+            >
+                VELORA
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-semibold">
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="index velora2.html"
+                            data-i18n="navHome"
+                        >
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link active text-gold"
+                            href="shop velora2.html"
+                            data-i18n="navShop"
+                        >
+                            Shop
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="women velora2.html"
+                            data-i18n="navWomen"
+                        >
+                            Women
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="men velora2.html"
+                            data-i18n="navMen"
+                        >
+                            Men
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="kids velora2.html"
+                            data-i18n="navKids"
+                        >
+                            Kids
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="new-arrivals velora2.html"
+                            data-i18n="navNewArrivals"
+                        >
+                            New Arrivals
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="d-flex align-items-center gap-3">
+
+                    <!-- Search -->
+                    <div class="input-group input-group-sm">
+
+                        <input
+                            id="search-input"
+                            type="text"
+                            class="form-control bg-dark text-white border-secondary"
+                            placeholder="Search..."
+                            data-i18n-placeholder="searchPlaceholder"
+                        >
+
+                        <button
+                            id="search-button"
+                            class="btn btn-outline-secondary text-gold"
+                            type="button"
+                            title="Search"
+                            data-i18n-title="searchTitle"
+                        >
+                            <i class="bi bi-search"></i>
+                        </button>
+
+                    </div>
+
+                    <!-- Language -->
+                    <button
+                        id="languageToggle"
+                        type="button"
+                        class="btn btn-sm btn-outline-warning"
+                    >
+                        AR
+                    </button>
+
+                    <!-- Login -->
+                    <a
+                        href="login velora2.html"
+                        class="text-white fs-5"
+                        title="Login"
+                        data-i18n-title="login"
+                    >
+                        <i class="bi bi-person"></i>
+                    </a>
+
+                    <!-- Wishlist -->
+                    <a
+                        href="wishlist velora2.html"
+                        class="text-white fs-5"
+                        title="Wishlist"
+                        data-i18n-title="wishlist"
+                    >
+                        <i class="bi bi-heart"></i>
+                    </a>
+
+                    <!-- Cart -->
+                    <a
+                        href="cart velora2.html"
+                        class="text-white fs-5 position-relative"
+                        title="Cart"
+                        data-i18n-title="cart"
+                    >
+                        <i class="bi bi-cart3"></i>
+
+                        <span
+                            id="cart-count"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark"
+                        >
+                            0
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ============================================
+         BREADCRUMB + PAGE TITLE
+         ============================================ -->
+
+    <div class="container my-4">
+
+        <nav aria-label="breadcrumb">
+
+            <ol class="breadcrumb">
+
+                <li class="breadcrumb-item">
+                    <a
+                        href="index velora2.html"
+                        class="text-gold text-decoration-none"
+                        data-i18n="navHome"
+                    >
+                        Home
+                    </a>
+                </li>
+
+                <li
+                    class="breadcrumb-item active text-white-50"
+                    aria-current="page"
+                    data-i18n="navShop"
+                >
+                    Shop
+                </li>
+
+            </ol>
+
+        </nav>
+
+        <h2
+            class="fw-bold text-uppercase border-bottom border-secondary pb-2"
+            data-i18n="allProducts"
+        >
+            All Products
+        </h2>
+
+    </div>
+
+
+    <!-- ============================================
+         SHOP CONTENT
+         ============================================ -->
+
+    <div class="container my-5">
+
+        <div class="row g-4">
+
+            <!-- =====================================
+                 FILTER SIDEBAR
+                 ===================================== -->
+
+            <div class="col-lg-3">
+
+                <div class="p-4 rounded border border-secondary bg-dark">
+
+                    <h5 class="fw-bold text-gold mb-3">
+
+                        <i class="bi bi-funnel"></i>
+
+                        <span data-i18n="filtering">
+                            Filtering
+                        </span>
+
+                    </h5>
+
+
+                    <!-- Categories -->
+
+                    <div id="category" class="mb-4">
+
+                        <h6
+                            class="fw-semibold mb-2"
+                            data-i18n="categories"
+                        >
+                            Categories
+                        </h6>
+
+
+                        <!-- All -->
+
+                        <div class="form-check mb-2">
+
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="catAll"
+                                checked
+                            >
+
+                            <label
+                                class="form-check-label"
+                                for="catAll"
+                                data-i18n="categoryAll"
+                            >
+                                All
+                            </label>
+
+                        </div>
+
+
+                        <!-- Women -->
+
+                        <div class="form-check mb-2">
+
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="catWomen"
+                            >
+
+                            <label
+                                class="form-check-label"
+                                for="catWomen"
+                                data-i18n="categoryWomen"
+                            >
+                                Women's Clothing
+                            </label>
+
+                        </div>
+
+
+                        <!-- Men -->
+
+                        <div class="form-check mb-2">
+
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="catMen"
+                            >
+
+                            <label
+                                class="form-check-label"
+                                for="catMen"
+                                data-i18n="categoryMen"
+                            >
+                                Men's Clothing
+                            </label>
+
+                        </div>
+
+
+                        <!-- Kids -->
+
+                        <div class="form-check mb-2">
+
+                            <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="catKids"
+                            >
+
+                            <label
+                                class="form-check-label"
+                                for="catKids"
+                                data-i18n="categoryKids"
+                            >
+                                Kids Clothing
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Apply Filter -->
+
+                    <button
+                        id="filterBtn"
+                        class="btn w-100 fw-bold text-dark"
+                        style="background-color:#d1b86c;"
+                        type="button"
+                        data-i18n="applyFilters"
+                    >
+                        Apply Filters
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- =====================================
+                 PRODUCTS
+                 ===================================== -->
+
+            <div class="col-lg-9">
+
+                <!-- Sort Bar -->
+
+                <div
+                    class="d-flex justify-content-between align-items-center mb-4 bg-dark p-3 rounded border border-secondary flex-wrap gap-3"
+                >
+
+                    <span
+                        class="text-white-50"
+                        data-i18n="productsCatalog"
+                    >
+                        Products Catalog
+                    </span>
+
+
+                    <div class="d-flex align-items-center gap-2">
+
+                        <span
+                            class="text-white-50"
+                            style="font-size:0.9rem;"
+                            data-i18n="sortBy"
+                        >
+                            Sort by
+                        </span>
+
+
+                        <select
+                            id="sort"
+                            class="form-select bg-dark text-white border-secondary rounded-0 py-1 px-2"
+                            style="font-size:0.9rem;"
+                        >
+
+                            <option
+                                value="newest"
+                                data-i18n="sortNewest"
+                            >
+                                Newest
+                            </option>
+
+                            <option
+                                value="low-high"
+                                data-i18n="sortLowHigh"
+                            >
+                                Price: Low to High
+                            </option>
+
+                            <option
+                                value="high-low"
+                                data-i18n="sortHighLow"
+                            >
+                                Price: High to Low
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Products Grid -->
+
+                <div
+                    class="row row-cols-1 row-cols-md-3 g-4"
+                    id="shop-product-grid"
+                >
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+
+    <footer
+        class="bg-black text-white text-center py-4 border-top border-secondary mt-5"
+    >
+
+        <div class="container">
+
+            <p class="mb-1 text-white-50">
+
+                <span data-i18n="footerRights">
+                    All Rights Reserved
+                </span>
+
+                &copy; 2026
+
+                <span data-i18n="footerForWebsite">
+                    For Website
+                </span>
+
+                <span class="text-gold fw-bold">
+                    VELORA
+                </span>
+
+            </p>
+
+
+            <p class="mb-0 fs-6">
+
+                <span data-i18n="developedDesigned">
+                    Developed and Designed by
+                </span>
+
+                💻 ✨
+
+                <span
+                    class="text-gold fw-bold border-bottom border-warning pb-1 ms-1"
+                >
+                    Eman Ahmad
+                </span>
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+
+    <!-- Shop Velora 2 JS -->
+
+    <script src="shop velora2.js"></script>
+
+</body>
+
+</html>

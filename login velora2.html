@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Velora - Login</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Velora 2 CSS -->
+    <link
+        rel="stylesheet"
+        href="style velora2.css">
+
+</head>
+
+
+<body
+    class="bg-black text-white d-flex justify-content-center align-items-center vh-100">
+
+
+    <!-- ============================================
+         LOGIN CARD
+         ============================================ -->
+
+    <div
+        class="card bg-dark text-white p-4 border-secondary shadow"
+        style="width: 350px; border-radius: 0;">
+
+
+        <!-- Language Button -->
+
+        <div class="d-flex justify-content-end mb-2">
+
+            <button
+                id="languageToggle"
+                type="button"
+                class="btn btn-sm btn-outline-light">
+
+                العربية
+
+            </button>
+
+        </div>
+
+
+        <!-- Logo -->
+
+        <h3
+            class="text-center text-gold mb-4 fw-bold">
+
+            VELORA
+            <span data-i18n="loginTitle">
+                Login
+            </span>
+
+        </h3>
+
+
+        <!-- Login Form -->
+
+        <form id="loginForm">
+
+
+            <!-- Email -->
+
+            <div class="mb-3">
+
+                <label
+                    for="email"
+                    class="form-label"
+                    data-i18n="email">
+
+                    Email
+
+                </label>
+
+
+                <input
+                    type="email"
+                    id="email"
+                    class="form-control bg-black text-white border-secondary"
+                    placeholder="Enter your email"
+                    data-i18n-placeholder="emailPlaceholder"
+                    required>
+
+            </div>
+
+
+            <!-- Password -->
+
+            <div class="mb-3">
+
+                <label
+                    for="password"
+                    class="form-label"
+                    data-i18n="password">
+
+                    Password
+
+                </label>
+
+
+                <input
+                    type="password"
+                    id="password"
+                    class="form-control bg-black text-white border-secondary"
+                    placeholder="Enter your password"
+                    data-i18n-placeholder="passwordPlaceholder"
+                    required>
+
+            </div>
+
+
+            <!-- Login Button -->
+
+            <button
+                type="submit"
+                class="btn btn-warning w-100 fw-bold text-dark mt-2"
+                style="background-color: #d1b86c; border-color: #d1b86c;">
+
+                <span data-i18n="loginButton">
+                    Login
+                </span>
+
+            </button>
+
+
+            <!-- Back Home -->
+
+            <div class="text-center mt-3">
+
+                <a
+                    href="index velora2.html"
+                    class="text-decoration-none text-light"
+                    style="font-size: 0.9rem;">
+
+                    <span data-i18n="backHome">
+                        Back to Home
+                    </span>
+
+                </a>
+
+            </div>
+
+        </form>
+
+    </div>
+
+
+    <!-- ============================================
+         JAVASCRIPT
+         ============================================ -->
+
+    <script>
+
+        /* ============================================
+           TRANSLATIONS
+           ============================================ */
+
+        const loginTranslations = {
+
+            en: {
+
+                loginTitle: "Login",
+
+                email: "Email",
+
+                emailPlaceholder:
+                    "Enter your email",
+
+                password: "Password",
+
+                passwordPlaceholder:
+                    "Enter your password",
+
+                loginButton: "Login",
+
+                backHome: "Back to Home",
+
+                loginSuccess:
+                    "Login successful!"
+
+            },
+
+
+            ar: {
+
+                loginTitle: "تسجيل الدخول",
+
+                email: "البريد الإلكتروني",
+
+                emailPlaceholder:
+                    "أدخل بريدك الإلكتروني",
+
+                password: "كلمة المرور",
+
+                passwordPlaceholder:
+                    "أدخل كلمة المرور",
+
+                loginButton:
+                    "تسجيل الدخول",
+
+                backHome:
+                    "العودة إلى الرئيسية",
+
+                loginSuccess:
+                    "تم تسجيل الدخول بنجاح!"
+
+            }
+
+        };
+
+
+        /* ============================================
+           CURRENT LANGUAGE
+           ============================================ */
+
+        let currentLanguage =
+            localStorage.getItem("veloraLanguage") || "en";
+
+
+        /* ============================================
+           APPLY LANGUAGE
+           ============================================ */
+
+        function applyLanguage() {
+
+            document.documentElement.lang =
+                currentLanguage;
+
+
+            document.documentElement.dir =
+                currentLanguage === "ar"
+                    ? "rtl"
+                    : "ltr";
+
+
+            document
+                .querySelectorAll("[data-i18n]")
+                .forEach(element => {
+
+                    const key =
+                        element.dataset.i18n;
+
+
+                    const translation =
+                        loginTranslations[
+                            currentLanguage
+                        ][key];
+
+
+                    if (translation) {
+
+                        element.textContent =
+                            translation;
+
+                    }
+
+                });
+
+
+            document
+                .querySelectorAll(
+                    "[data-i18n-placeholder]"
+                )
+                .forEach(element => {
+
+                    const key =
+                        element.dataset
+                            .i18nPlaceholder;
+
+
+                    const translation =
+                        loginTranslations[
+                            currentLanguage
+                        ][key];
+
+
+                    if (translation) {
+
+                        element.placeholder =
+                            translation;
+
+                    }
+
+                });
+
+
+            const languageToggle =
+                document.getElementById(
+                    "languageToggle"
+                );
+
+
+            if (languageToggle) {
+
+                languageToggle.textContent =
+                    currentLanguage === "en"
+                        ? "العربية"
+                        : "English";
+
+            }
+
+
+            localStorage.setItem(
+                "veloraLanguage",
+                currentLanguage
+            );
+
+        }
+
+
+        /* ============================================
+           LANGUAGE TOGGLE
+           ============================================ */
+
+        function setupLanguageToggle() {
+
+            const languageToggle =
+                document.getElementById(
+                    "languageToggle"
+                );
+
+
+            if (!languageToggle) return;
+
+
+            languageToggle.addEventListener(
+                "click",
+                () => {
+
+                    currentLanguage =
+                        currentLanguage === "en"
+                            ? "ar"
+                            : "en";
+
+
+                    applyLanguage();
+
+                }
+            );
+
+        }
+
+
+        /* ============================================
+           LOGIN FORM
+           ============================================ */
+
+        function setupLoginForm() {
+
+            const loginForm =
+                document.getElementById(
+                    "loginForm"
+                );
+
+
+            if (!loginForm) return;
+
+
+            loginForm.addEventListener(
+                "submit",
+                event => {
+
+                    event.preventDefault();
+
+
+                    alert(
+                        loginTranslations[
+                            currentLanguage
+                        ].loginSuccess
+                    );
+
+                }
+            );
+
+        }
+
+
+        /* ============================================
+           INITIALIZE
+           ============================================ */
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            () => {
+
+                applyLanguage();
+
+                setupLanguageToggle();
+
+                setupLoginForm();
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Velora - New Arrivals</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <!-- Velora 2 CSS -->
+    <link rel="stylesheet" href="style velora2.css">
+
+    <style>
+        body {
+            background-color: #000000 !important;
+            color: #ffffff !important;
+        }
+
+        .text-gold {
+            color: #d1b86c !important;
+        }
+
+        .btn-velora-gold {
+            background-color: #d1b86c;
+            border-color: #d1b86c;
+            color: #000000;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 0;
+        }
+
+        .btn-velora-gold:hover {
+            background-color: #bfa55a;
+            border-color: #bfa55a;
+            color: #000000;
+        }
+
+        .product-card {
+            background-color: #111111;
+            border: 1px solid #333333;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            border-color: #d1b86c;
+            transform: translateY(-5px);
+        }
+
+        .product-image-box {
+            height: 230px;
+            overflow: hidden;
+        }
+
+        .product-image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .carousel-item {
+            height: 60vh;
+            min-height: 400px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            backdrop-filter: blur(5px);
+        }
+
+        .language-btn {
+            border: 1px solid #d1b86c;
+            color: #d1b86c;
+            background: transparent;
+            border-radius: 0;
+            padding: 5px 10px;
+            font-size: 0.8rem;
+        }
+
+        .language-btn:hover {
+            background-color: #d1b86c;
+            color: #000000;
+        }
+
+        html[dir="rtl"] .product-details {
+            text-align: right !important;
+        }
+
+        html[dir="rtl"] .carousel-caption {
+            direction: rtl;
+        }
+    </style>
+
+</head>
+
+
+<body class="bg-black text-white">
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black py-3 border-bottom border-secondary sticky-top">
+
+        <div class="container">
+
+            <!-- Logo -->
+            <a
+                class="navbar-brand fw-bold fs-3 text-gold tracking-widest"
+                href="index velora2.html">
+                VELORA
+            </a>
+
+
+            <!-- Mobile Button -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <!-- Navigation -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-semibold">
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="index velora2.html"
+                            data-i18n="home">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="shop velora2.html"
+                            data-i18n="shop">
+                            Shop
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="women velora2.html"
+                            data-i18n="women">
+                            Women
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="men velora2.html"
+                            data-i18n="men">
+                            Men
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="kids velora2.html"
+                            data-i18n="kids">
+                            Kids
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link active text-gold"
+                            href="new-arrivals velora2.html"
+                            data-i18n="newArrivals">
+                            New Arrivals
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!-- Navbar Icons -->
+                <div class="d-flex align-items-center gap-3 flex-wrap">
+
+                    <!-- Search -->
+                    <div class="input-group input-group-sm">
+
+                        <input
+                            id="search-input"
+                            type="text"
+                            class="form-control bg-dark text-white border-secondary"
+                            placeholder="Search..."
+                            data-i18n-placeholder="searchPlaceholder">
+
+                    </div>
+
+
+                    <!-- Language -->
+                    <button
+                        id="languageToggle"
+                        class="language-btn"
+                        type="button">
+                        العربية
+                    </button>
+
+
+                    <!-- Login -->
+                    <a
+                        href="login velora2.html"
+                        class="text-white fs-5"
+                        title="Login"
+                        data-i18n-title="login">
+
+                        <i class="bi bi-person"></i>
+
+                    </a>
+
+
+                    <!-- Wishlist -->
+                    <a
+                        href="wishlist velora2.html"
+                        class="text-white fs-5"
+                        title="Wishlist"
+                        data-i18n-title="wishlist">
+
+                        <i class="bi bi-heart"></i>
+
+                    </a>
+
+
+                    <!-- Cart -->
+                    <a
+                        href="cart velora2.html"
+                        class="text-white fs-5 position-relative"
+                        title="Cart"
+                        data-i18n-title="cart">
+
+                        <i class="bi bi-cart3"></i>
+
+                        <span
+                            id="cart-badge"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark"
+                            style="font-size:0.65rem;">
+                            0
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= CAROUSEL ================= -->
+
+    <div
+        id="newArrivalsCarousel"
+        class="carousel slide border-bottom border-secondary"
+        data-bs-ride="carousel">
+
+
+        <!-- Indicators -->
+
+        <div class="carousel-indicators">
+
+            <button
+                type="button"
+                data-bs-target="#newArrivalsCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true">
+            </button>
+
+            <button
+                type="button"
+                data-bs-target="#newArrivalsCarousel"
+                data-bs-slide-to="1">
+            </button>
+
+            <button
+                type="button"
+                data-bs-target="#newArrivalsCarousel"
+                data-bs-slide-to="2">
+            </button>
+
+        </div>
+
+
+        <!-- Carousel Items -->
+
+        <div class="carousel-inner">
+
+
+            <!-- Slide 1 -->
+
+            <div
+                class="carousel-item active"
+                style="
+                    background-image:
+                    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+                    url('https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=1200');
+                ">
+
+                <div
+                    class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+
+                    <span
+                        class="badge bg-warning text-dark fs-6 mb-2 text-uppercase fw-bold"
+                        data-i18n="summerCollection">
+                        Summer Collection
+                    </span>
+
+                    <h1
+                        class="display-4 fw-bold text-uppercase text-gold mb-2"
+                        data-i18n="luxurySummer">
+                        Luxury Summer Fashion
+                    </h1>
+
+                    <p
+                        class="lead mb-4"
+                        data-i18n="summerDescription">
+                        Discover Linen Designs and Trendy Exclusive Styles
+                    </p>
+
+                    <a
+                        href="#new-products"
+                        class="btn btn-velora-gold btn-lg px-4 fw-bold"
+                        data-i18n="shopNow">
+                        Shop Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Slide 2 -->
+
+            <div
+                class="carousel-item"
+                style="
+                    background-image:
+                    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+                    url('https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=1200');
+                ">
+
+                <div
+                    class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+
+                    <span
+                        class="badge bg-warning text-dark fs-6 mb-2 text-uppercase fw-bold"
+                        data-i18n="newTrends">
+                        New Trends
+                    </span>
+
+                    <h1
+                        class="display-4 fw-bold text-uppercase text-gold mb-2"
+                        data-i18n="mensLooks">
+                        Luxury Men's Looks
+                    </h1>
+
+                    <p
+                        class="lead mb-4"
+                        data-i18n="mensDescription">
+                        The Finest Suits And Casual Jackets This Season
+                    </p>
+
+                    <a
+                        href="#new-products"
+                        class="btn btn-velora-gold btn-lg px-4 fw-bold"
+                        data-i18n="exploreCollection">
+                        Explore Collection
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Slide 3 -->
+
+            <div
+                class="carousel-item"
+                style="
+                    background-image:
+                    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+                    url('https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg?auto=compress&cs=tinysrgb&w=1200');
+                ">
+
+                <div
+                    class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+
+                    <span
+                        class="badge bg-warning text-dark fs-6 mb-2 text-uppercase fw-bold"
+                        data-i18n="exclusiveOffer">
+                        Exclusive Offer
+                    </span>
+
+                    <h1
+                        class="display-4 fw-bold text-uppercase text-gold mb-2"
+                        data-i18n="discounts">
+                        Discounts Up To 50 Percent
+                    </h1>
+
+                    <p
+                        class="lead mb-4"
+                        data-i18n="discountDescription">
+                        On Selected Items From Kids And Women's Collection
+                    </p>
+
+                    <a
+                        href="#new-products"
+                        class="btn btn-velora-gold btn-lg px-4 fw-bold"
+                        data-i18n="getYours">
+                        Get Yours Now
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Controls -->
+
+        <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#newArrivalsCarousel"
+            data-bs-slide="prev">
+
+            <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true">
+            </span>
+
+        </button>
+
+
+        <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#newArrivalsCarousel"
+            data-bs-slide="next">
+
+            <span
+                class="carousel-control-next-icon"
+                aria-hidden="true">
+            </span>
+
+        </button>
+
+    </div>
+
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <div
+        class="container my-5"
+        id="new-products">
+
+
+        <!-- Section Header -->
+
+        <div
+            class="d-flex justify-content-between align-items-center mb-4 border-bottom border-secondary pb-2">
+
+            <h3
+                class="fw-bold text-uppercase text-white"
+                data-i18n="newArrivals">
+                New Arrivals
+            </h3>
+
+            <span
+                class="text-gold fw-semibold"
+                data-i18n="exclusiveLimited">
+                Exclusive and Limited
+            </span>
+
+        </div>
+
+
+        <!-- Products Grid -->
+
+        <div
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4"
+            id="new-products-grid">
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer
+        class="bg-black text-white text-center py-4 border-top border-secondary mt-5">
+
+        <div class="container">
+
+            <p
+                class="mb-1 text-white-50"
+                data-i18n="copyright">
+                All Rights Reserved © 2026 For Website VELORA
+            </p>
+
+            <p class="mb-0 fs-6">
+
+                <span data-i18n="developedBy">
+                    Developed and Designed by
+                </span>
+
+                💻 ✨
+
+                <span
+                    class="text-gold fw-bold border-bottom border-warning pb-1 ms-1">
+                    Eman Ahmad
+                </span>
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- ================= NEW ARRIVALS SCRIPT ================= -->
+
+    <script>
+
+        /* ==========================================
+           TRANSLATIONS
+        ========================================== */
+
+        const newArrivalsTranslations = {
+
+            en: {
+
+                home: "Home",
+                shop: "Shop",
+                women: "Women",
+                men: "Men",
+                kids: "Kids",
+                newArrivals: "New Arrivals",
+
+                searchPlaceholder: "Search new arrivals...",
+
+                login: "Login",
+                wishlist: "Wishlist",
+                cart: "Cart",
+
+                summerCollection: "Summer Collection",
+                luxurySummer: "Luxury Summer Fashion",
+                summerDescription:
+                    "Discover Linen Designs and Trendy Exclusive Styles",
+                shopNow: "Shop Now",
+
+                newTrends: "New Trends",
+                mensLooks: "Luxury Men's Looks",
+                mensDescription:
+                    "The Finest Suits And Casual Jackets This Season",
+                exploreCollection: "Explore Collection",
+
+                exclusiveOffer: "Exclusive Offer",
+                discounts: "Discounts Up To 50 Percent",
+                discountDescription:
+                    "On Selected Items From Kids And Women's Collection",
+                getYours: "Get Yours Now",
+
+                exclusiveLimited: "Exclusive and Limited",
+
+                men: "Men",
+                women: "Women",
+                kids: "Kids",
+
+                newBadge: "NEW",
+
+                addToCart: "Add to Cart",
+                favourite: "Add to Wishlist",
+
+                noProducts:
+                    "No products found matching your search.",
+
+                addedToCart:
+                    "Added to Cart Successfully!",
+
+                copyright:
+                    "All Rights Reserved © 2026 For Website VELORA",
+
+                developedBy:
+                    "Developed and Designed by"
+
+            },
+
+
+            ar: {
+
+                home: "الرئيسية",
+                shop: "المتجر",
+                women: "نساء",
+                men: "رجال",
+                kids: "أطفال",
+                newArrivals: "وصل حديثًا",
+
+                searchPlaceholder:
+                    "ابحث في المنتجات الجديدة...",
+
+                login: "تسجيل الدخول",
+                wishlist: "المفضلة",
+                cart: "السلة",
+
+                summerCollection:
+                    "مجموعة الصيف",
+
+                luxurySummer:
+                    "أزياء صيفية فاخرة",
+
+                summerDescription:
+                    "اكتشفي تصميمات الكتان وأحدث الإطلالات الحصرية",
+
+                shopNow:
+                    "تسوق الآن",
+
+                newTrends:
+                    "أحدث صيحات الموضة",
+
+                mensLooks:
+                    "إطلالات رجالية فاخرة",
+
+                mensDescription:
+                    "أرقى البدلات والجاكيتات الكاجوال لهذا الموسم",
+
+                exploreCollection:
+                    "اكتشف المجموعة",
+
+                exclusiveOffer:
+                    "عرض حصري",
+
+                discounts:
+                    "خصومات تصل إلى 50٪",
+
+                discountDescription:
+                    "على منتجات مختارة من مجموعة الأطفال والنساء",
+
+                getYours:
+                    "احصل عليها الآن",
+
+                exclusiveLimited:
+                    "منتجات حصرية ومحدودة",
+
+                men:
+                    "رجال",
+
+                women:
+                    "نساء",
+
+                kids:
+                    "أطفال",
+
+                newBadge:
+                    "جديد",
+
+                addToCart:
+                    "أضف إلى السلة",
+
+                favourite:
+                    "أضف إلى المفضلة",
+
+                noProducts:
+                    "لا توجد منتجات تطابق بحثك.",
+
+                addedToCart:
+                    "تمت إضافة المنتج إلى السلة بنجاح!",
+
+                copyright:
+                    "جميع الحقوق محفوظة © 2026 لموقع VELORA",
+
+                developedBy:
+                    "تم التطوير والتصميم بواسطة"
+
+            }
+
+        };
+
+
+        /* ==========================================
+           PRODUCTS
+        ========================================== */
+
+        const newArrivalsProducts = [
+
+            {
+                id: 28,
+
+                name: {
+                    en: "Classic Fit Sky Blue Shirt",
+                    ar: "قميص كلاسيك باللون الأزرق السماوي"
+                },
+
+                image:
+                    "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=500",
+
+                price: 620,
+
+                category: "men"
+
+            },
+
+
+            {
+                id: 29,
+
+                name: {
+                    en: "Lemon Dream Floral Midi Dress",
+                    ar: "فستان ميدي زهري بلون الليمون"
+                },
+
+                image:
+                    "https://images.pexels.com/photos/985635/pexels-photo-985635.jpeg?auto=compress&cs=tinysrgb&w=500",
+
+                price: 1100,
+
+                category: "women"
+
+            },
+
+
+            {
+                id: 30,
+
+                name: {
+                    en: "Casual Leather Jacket",
+                    ar: "جاكيت جلد كاجوال"
+                },
+
+                image:
+                    "https://images.pexels.com/photos/1124468/pexels-photo-1124468.jpeg?auto=compress&cs=tinysrgb&w=500",
+
+                price: 1100,
+
+                category: "men"
+
+            },
+
+
+            {
+                id: 31,
+
+                name: {
+                    en: "Stylish Summer Dress",
+                    ar: "فستان صيفي أنيق"
+                },
+
+                image:
+                    "https://images.pexels.com/photos/1462637/pexels-photo-1462637.jpeg?auto=compress&cs=tinysrgb&w=500",
+
+                price: 720,
+
+                category: "women"
+
+            },
+
+
+            {
+                id: 32,
+
+                name: {
+                    en: "Kids Colorful Casual Outfit",
+                    ar: "طقم أطفال كاجوال ملون"
+                },
+
+                image:
+                    "https://images.pexels.com/photos/1620760/pexels-photo-1620760.jpeg?auto=compress&cs=tinysrgb&w=500",
+
+                price: 380,
+
+                category: "kids"
+
+            }
+
+        ];
+
+
+        /* ==========================================
+           LANGUAGE
+        ========================================== */
+
+        let currentLanguage =
+            localStorage.getItem("veloraLanguage") || "en";
+
+
+        /* ==========================================
+           ELEMENTS
+        ========================================== */
+
+        const languageToggle =
+            document.getElementById("languageToggle");
+
+        const searchInput =
+            document.getElementById("search-input");
+
+        const productsGrid =
+            document.getElementById("new-products-grid");
+
+        const cartBadge =
+            document.getElementById("cart-badge");
+
+
+        /* ==========================================
+           APPLY LANGUAGE
+        ========================================== */
+
+        function applyNewArrivalsLanguage() {
+
+            document.documentElement.lang =
+                currentLanguage;
+
+            document.documentElement.dir =
+                currentLanguage === "ar"
+                    ? "rtl"
+                    : "ltr";
+
+
+            /* Text */
+
+            document
+                .querySelectorAll("[data-i18n]")
+                .forEach(element => {
+
+                    const key =
+                        element.dataset.i18n;
+
+                    if (
+                        newArrivalsTranslations[currentLanguage][key]
+                    ) {
+
+                        element.textContent =
+                            newArrivalsTranslations[currentLanguage][key];
+
+                    }
+
+                });
+
+
+            /* Placeholder */
+
+            document
+                .querySelectorAll("[data-i18n-placeholder]")
+                .forEach(element => {
+
+                    const key =
+                        element.dataset.i18nPlaceholder;
+
+                    if (
+                        newArrivalsTranslations[currentLanguage][key]
+                    ) {
+
+                        element.placeholder =
+                            newArrivalsTranslations[currentLanguage][key];
+
+                    }
+
+                });
+
+
+            /* Titles */
+
+            document
+                .querySelectorAll("[data-i18n-title]")
+                .forEach(element => {
+
+                    const key =
+                        element.dataset.i18nTitle;
+
+                    if (
+                        newArrivalsTranslations[currentLanguage][key]
+                    ) {
+
+                        element.title =
+                            newArrivalsTranslations[currentLanguage][key];
+
+                    }
+
+                });
+
+
+            languageToggle.textContent =
+                currentLanguage === "en"
+                    ? "العربية"
+                    : "English";
+
+
+            localStorage.setItem(
+                "veloraLanguage",
+                currentLanguage
+            );
+
+
+            renderNewArrivals(
+                newArrivalsProducts
+            );
+
+        }
+
+
+        /* ==========================================
+           RENDER PRODUCTS
+        ========================================== */
+
+        function renderNewArrivals(products) {
+
+            productsGrid.innerHTML = "";
+
+
+            if (products.length === 0) {
+
+                productsGrid.innerHTML = `
+
+                    <div class="col-12 text-center text-muted py-5">
+
+                        <h5>
+                            ${newArrivalsTranslations[currentLanguage].noProducts}
+                        </h5>
+
+                    </div>
+
+                `;
+
+                return;
+            }
+
+
+            products.forEach(product => {
+
+                const productName =
+                    product.name[currentLanguage];
+
+                const categoryName =
+                    newArrivalsTranslations[currentLanguage][
+                        product.category
+                    ];
+
+
+                productsGrid.innerHTML += `
+
+                    <div class="col">
+
+                        <div
+                            class="product-card p-3 shadow-sm h-100 d-flex flex-column justify-content-between position-relative"
+                            style="cursor:pointer;"
+                            data-product-id="${product.id}">
+
+
+                            <div>
+
+                                <!-- New Badge -->
+
+                                <span
+                                    class="badge bg-warning text-dark mb-2 position-absolute top-0 start-0 m-3"
+                                    style="z-index:2;">
+
+                                    ${newArrivalsTranslations[currentLanguage].newBadge}
+
+                                </span>
+
+
+                                <!-- Image -->
+
+                                <div
+                                    class="product-image-box mb-3 bg-dark rounded">
+
+                                    <img
+                                        src="${product.image}"
+                                        alt="${productName}"
+                                        loading="lazy">
+
+                                </div>
+
+
+                                <!-- Details -->
+
+                                <div
+                                    class="product-details text-start text-white text-uppercase"
+                                    style="font-size:0.8rem;">
+
+                                    <span
+                                        class="text-gold fw-bold"
+                                        style="font-size:0.7rem;">
+
+                                        ${categoryName}
+
+                                    </span>
+
+
+                                    <h6
+                                        class="fw-semibold mb-1 text-white text-truncate">
+
+                                        ${productName}
+
+                                    </h6>
+
+
+                                    <p
+                                        class="price fw-bold text-white mb-2"
+                                        style="font-size:1rem;">
+
+                                        ${product.price} EGP
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Buttons -->
+
+                            <div class="d-flex gap-2 mt-2">
+
+                                <button
+                                    class="btn btn-velora-gold w-75 rounded-0 py-1 add-cart-btn"
+                                    data-id="${product.id}">
+
+                                    ${newArrivalsTranslations[currentLanguage].addToCart}
+
+                                </button>
+
+
+                                <button
+                                    class="btn btn-outline-warning w-25 rounded-0 py-1 wishlist-btn"
+                                    data-id="${product.id}"
+                                    style="border-color:#d1b86c;color:#d1b86c;"
+                                    title="${newArrivalsTranslations[currentLanguage].favourite}">
+
+                                    <i class="bi bi-heart"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                `;
+
+            });
+
+        }
+
+
+        /* ==========================================
+           ADD TO CART
+        ========================================== */
+
+        function addNewArrivalToCart(productId) {
+
+            const product =
+                newArrivalsProducts.find(
+                    item => item.id === productId
+                );
+
+
+            if (!product) {
+                return;
+            }
+
+
+            let cart =
+                JSON.parse(
+                    localStorage.getItem("veloraCart")
+                ) || [];
+
+
+            const existingItem =
+                cart.find(
+                    item => item.id === product.id
+                );
+
+
+            if (existingItem) {
+
+                existingItem.quantity += 1;
+
+            } else {
+
+                cart.push({
+
+                    id:
+                        product.id,
+
+                    name:
+                        product.name.en,
+
+                    nameTranslations:
+                        product.name,
+
+                    price:
+                        product.price,
+
+                    image:
+                        product.image,
+
+                    category:
+                        product.category,
+
+                    quantity: 1
+
+                });
+
+            }
+
+
+            localStorage.setItem(
+                "veloraCart",
+                JSON.stringify(cart)
+            );
+
+
+            updateCartBadge();
+
+
+            alert(
+                newArrivalsTranslations[currentLanguage].addedToCart
+            );
+
+        }
+
+
+        /* ==========================================
+           ADD TO WISHLIST
+        ========================================== */
+
+        function addNewArrivalToWishlist(productId) {
+
+            const product =
+                newArrivalsProducts.find(
+                    item => item.id === productId
+                );
+
+
+            if (!product) {
+                return;
+            }
+
+
+            let wishlist =
+                JSON.parse(
+                    localStorage.getItem("veloraWishlist")
+                ) || [];
+
+
+            const exists =
+                wishlist.some(
+                    item => item.id === product.id
+                );
+
+
+            if (!exists) {
+
+                wishlist.push({
+
+                    id:
+                        product.id,
+
+                    name:
+                        product.name.en,
+
+                    nameTranslations:
+                        product.name,
+
+                    price:
+                        product.price,
+
+                    image:
+                        product.image,
+
+                    category:
+                        product.category
+
+                });
+
+
+                localStorage.setItem(
+                    "veloraWishlist",
+                    JSON.stringify(wishlist)
+                );
+
+            }
+
+
+            window.location.href =
+                "wishlist velora2.html";
+
+        }
+
+
+        /* ==========================================
+           VIEW PRODUCT
+        ========================================== */
+
+        function viewNewArrival(productId) {
+
+            const product =
+                newArrivalsProducts.find(
+                    item => item.id === productId
+                );
+
+
+            if (!product) {
+                return;
+            }
+
+
+            const selectedProduct = {
+
+                id:
+                    product.id,
+
+                name:
+                    product.name.en,
+
+                nameTranslations:
+                    product.name,
+
+                price:
+                    product.price,
+
+                image:
+                    product.image,
+
+                category:
+                    product.category
+
+            };
+
+
+            localStorage.setItem(
+                "selectedProduct",
+                JSON.stringify(selectedProduct)
+            );
+
+
+            window.location.href =
+                "product-details velora2.html";
+
+        }
+
+
+        /* ==========================================
+           SEARCH
+        ========================================== */
+
+        function searchNewArrivals() {
+
+            const term =
+                searchInput.value
+                    .toLowerCase()
+                    .trim();
+
+
+            const filteredProducts =
+                newArrivalsProducts.filter(product => {
+
+                    const englishName =
+                        product.name.en.toLowerCase();
+
+                    const arabicName =
+                        product.name.ar.toLowerCase();
+
+
+                    return (
+                        englishName.includes(term) ||
+                        arabicName.includes(term)
+                    );
+
+                });
+
+
+            renderNewArrivals(
+                filteredProducts
+            );
+
+        }
+
+
+        /* ==========================================
+           CART BADGE
+        ========================================== */
+
+        function updateCartBadge() {
+
+            const cart =
+                JSON.parse(
+                    localStorage.getItem("veloraCart")
+                ) || [];
+
+
+            const totalCount =
+                cart.reduce(
+                    (sum, item) =>
+                        sum + (item.quantity || 1),
+                    0
+                );
+
+
+            if (cartBadge) {
+
+                cartBadge.textContent =
+                    totalCount;
+
+            }
+
+        }
+
+
+        /* ==========================================
+           EVENTS
+        ========================================== */
+
+        languageToggle.addEventListener(
+            "click",
+            () => {
+
+                currentLanguage =
+                    currentLanguage === "en"
+                        ? "ar"
+                        : "en";
+
+                applyNewArrivalsLanguage();
+
+            }
+        );
+
+
+        searchInput.addEventListener(
+            "input",
+            searchNewArrivals
+        );
+
+
+        productsGrid.addEventListener(
+            "click",
+            event => {
+
+                const cartButton =
+                    event.target.closest(".add-cart-btn");
+
+                const wishlistButton =
+                    event.target.closest(".wishlist-btn");
+
+                const productCard =
+                    event.target.closest(".product-card");
+
+
+                if (cartButton) {
+
+                    const productId =
+                        Number(cartButton.dataset.id);
+
+                    addNewArrivalToCart(
+                        productId
+                    );
+
+                    return;
+                }
+
+
+                if (wishlistButton) {
+
+                    const productId =
+                        Number(wishlistButton.dataset.id);
+
+                    addNewArrivalToWishlist(
+                        productId
+                    );
+
+                    return;
+                }
+
+
+                if (productCard) {
+
+                    const productId =
+                        Number(productCard.dataset.productId);
+
+                    viewNewArrival(
+                        productId
+                    );
+
+                }
+
+            }
+        );
+
+
+        /* ==========================================
+           STORAGE EVENT
+        ========================================== */
+
+        window.addEventListener(
+            "storage",
+            event => {
+
+                if (
+                    event.key === "veloraCart"
+                ) {
+
+                    updateCartBadge();
+
+                }
+
+            }
+        );
+
+
+        /* ==========================================
+           INITIALIZE
+        ========================================== */
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            () => {
+
+                applyNewArrivalsLanguage();
+
+                updateCartBadge();
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>

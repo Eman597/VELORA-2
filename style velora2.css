@@ -1,0 +1,334 @@
+/* ============================================
+   1. GENERAL SETTINGS
+   ============================================ */
+
+:root {
+    --velora-gold: #d1b86c;
+    --velora-gold-hover: #bfa55a;
+    --velora-bg-dark: #111;
+    --velora-black: #000;
+    --velora-white: #fff;
+    --velora-border: #444;
+}
+
+html {
+    direction: ltr;
+}
+
+body {
+    font-family: 'Cairo', Arial, sans-serif;
+    overflow-x: hidden;
+    direction: ltr;
+    text-align: left;
+}
+
+/* Arabic mode */
+html[dir="rtl"],
+body[dir="rtl"] {
+    direction: rtl;
+}
+
+html[dir="rtl"] body,
+body[dir="rtl"] {
+    text-align: right;
+}
+
+
+/* ============================================
+   2. TEXT COLORS
+   ============================================ */
+
+.text-gold {
+    color: var(--velora-gold) !important;
+}
+
+
+/* ============================================
+   3. NAVBAR
+   ============================================ */
+
+.navbar-dark .navbar-brand {
+    color: var(--velora-gold);
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-brand:hover {
+    color: var(--velora-gold-hover);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--velora-gold);
+}
+
+
+/* Navbar icons */
+
+.bi-cart3,
+.bi-heart,
+.bi-person {
+    transition: color 0.3s ease;
+}
+
+.bi-cart3:hover,
+.bi-heart:hover,
+.bi-person:hover {
+    color: var(--velora-gold);
+}
+
+
+/* Search */
+
+#search-input {
+    min-width: 150px;
+}
+
+#search-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#search-input:focus {
+    border-color: var(--velora-gold) !important;
+    box-shadow: 0 0 0 0.15rem rgba(209, 184, 108, 0.2);
+}
+
+
+/* Language button */
+
+#languageToggle {
+    border-color: var(--velora-gold);
+    color: var(--velora-gold);
+    transition: all 0.3s ease;
+}
+
+#languageToggle:hover {
+    background-color: var(--velora-gold);
+    border-color: var(--velora-gold);
+    color: #000;
+}
+
+
+/* ============================================
+   4. HERO BANNER
+   ============================================ */
+
+.hero-banner-content {
+    background-color: #f7f7f7;
+}
+
+.hero-sale-bg {
+    transition: transform 0.3s ease;
+}
+
+.hero-sale-bg:hover {
+    transform: translateY(-5px);
+}
+
+
+/* ============================================
+   5. VELORA BUTTONS
+   ============================================ */
+
+.btn-velora-gold {
+    background-color: var(--velora-gold);
+    border-color: var(--velora-gold);
+    color: #000;
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+
+.btn-velora-gold:hover {
+    background-color: var(--velora-gold-hover);
+    border-color: var(--velora-gold-hover);
+    color: #000;
+    transform: scale(1.05);
+}
+
+.btn-velora-light {
+    background-color: var(--velora-white);
+    color: #000;
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+
+.btn-velora-light:hover {
+    background-color: var(--velora-gold);
+    color: #000;
+}
+
+
+/* ============================================
+   6. NEW ARRIVALS
+   ============================================ */
+
+.new-arrivals {
+    background-color: var(--velora-black);
+}
+
+
+/* ============================================
+   7. PRODUCT CARD
+   ============================================ */
+
+.product-card {
+    background-color: transparent;
+    border: 1px solid var(--velora-border);
+    border-radius: 0;
+    color: var(--velora-white);
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    border-color: var(--velora-gold);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(209, 184, 108, 0.3);
+}
+
+
+/* Product image */
+
+.product-card img {
+    width: 100%;
+    display: block;
+}
+
+
+/* Product details */
+
+.product-details {
+    direction: ltr;
+    text-align: left;
+}
+
+
+/* Arabic product details */
+
+html[dir="rtl"] .product-details,
+body[dir="rtl"] .product-details {
+    direction: rtl;
+    text-align: right;
+}
+
+
+/* Product name */
+
+.product-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* ============================================
+   8. PRODUCT RATING
+   ============================================ */
+
+.rating i {
+    color: var(--velora-gold);
+    font-size: 0.9rem;
+}
+
+
+/* ============================================
+   9. PRODUCT PRICE
+   ============================================ */
+
+.price {
+    font-size: 1.1rem;
+    color: var(--velora-white);
+}
+
+
+/* ============================================
+   10. FOOTER
+   ============================================ */
+
+footer {
+    direction: ltr;
+    text-align: center;
+}
+
+
+/* Arabic footer */
+
+html[dir="rtl"] footer,
+body[dir="rtl"] footer {
+    direction: rtl;
+}
+
+
+/* ============================================
+   11. RTL SUPPORT
+   ============================================ */
+
+html[dir="rtl"] .navbar,
+body[dir="rtl"] .navbar {
+    direction: rtl;
+}
+
+html[dir="rtl"] .navbar-nav,
+body[dir="rtl"] .navbar-nav {
+    direction: rtl;
+}
+
+html[dir="rtl"] .input-group,
+body[dir="rtl"] .input-group {
+    direction: rtl;
+}
+
+html[dir="rtl"] #search-input,
+body[dir="rtl"] #search-input {
+    text-align: right;
+}
+
+
+/* ============================================
+   12. RESPONSIVE
+   ============================================ */
+
+@media (max-width: 991.98px) {
+
+    .navbar .container-fluid {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .navbar-collapse {
+        padding-top: 1rem;
+    }
+
+    .navbar-nav {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .navbar .d-flex {
+        flex-wrap: wrap;
+        margin-top: 1rem;
+    }
+
+    #search-input {
+        min-width: 120px;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+
+    .navbar .d-flex {
+        gap: 0.75rem !important;
+    }
+
+    #search-input {
+        width: 130px;
+    }
+
+    .product-card img {
+        height: 220px !important;
+    }
+}

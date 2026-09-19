@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Velora - Men's Section</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <!-- Velora 2 CSS -->
+    <link rel="stylesheet" href="style velora2.css">
+
+    <style>
+        body {
+            background-color: #000000 !important;
+            color: #ffffff !important;
+        }
+
+        .bg-black {
+            background-color: #000000 !important;
+        }
+
+        .text-gold {
+            color: #d1b86c !important;
+        }
+
+        .btn-velora-gold {
+            background-color: #d1b86c;
+            border-color: #d1b86c;
+            color: #000000;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 0;
+        }
+
+        .btn-velora-gold:hover {
+            background-color: #bfa55a;
+            border-color: #bfa55a;
+            color: #000000;
+        }
+
+        .product-card {
+            background-color: #111111;
+            border: 1px solid #444444;
+            border-radius: 0;
+            transition: 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            border-color: #d1b86c;
+        }
+
+        .product-img {
+            height: 260px;
+            object-fit: cover;
+            width: 100%;
+            background-color: #1a1a1a;
+        }
+
+        .product-details {
+            text-align: left;
+        }
+
+        html[dir="rtl"] .product-details {
+            text-align: right !important;
+        }
+
+        html[dir="rtl"] .breadcrumb {
+            flex-direction: row;
+        }
+
+        .language-btn {
+            border: 1px solid #d1b86c;
+            color: #d1b86c;
+            background: transparent;
+            border-radius: 0;
+            padding: 5px 10px;
+            font-size: 0.8rem;
+        }
+
+        .language-btn:hover {
+            background-color: #d1b86c;
+            color: #000;
+        }
+    </style>
+</head>
+
+
+<body class="bg-black text-white">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black py-3 border-bottom border-secondary sticky-top">
+
+        <div class="container">
+
+            <!-- Logo -->
+            <a
+                class="navbar-brand fw-bold fs-3 text-gold tracking-widest"
+                href="index velora2.html">
+                VELORA
+            </a>
+
+
+            <!-- Mobile Button -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <!-- Navigation -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-semibold">
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="index velora2.html"
+                            data-i18n="home">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="shop velora2.html"
+                            data-i18n="shop">
+                            Shop
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="women velora2.html"
+                            data-i18n="women">
+                            Women
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link active text-gold"
+                            href="men velora2.html"
+                            data-i18n="men">
+                            Men
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="kids velora2.html"
+                            data-i18n="kids">
+                            Kids
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="new-arrivals velora2.html"
+                            data-i18n="newArrivals">
+                            New Arrivals
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!-- Right Side -->
+                <div class="d-flex align-items-center gap-3 flex-wrap">
+
+                    <!-- Search -->
+                    <div class="input-group input-group-sm">
+
+                        <input
+                            id="search-input"
+                            type="text"
+                            class="form-control bg-dark text-white border-secondary"
+                            placeholder="Search..."
+                            data-i18n-placeholder="searchPlaceholder">
+
+                    </div>
+
+
+                    <!-- Language -->
+                    <button
+                        id="languageToggle"
+                        class="language-btn"
+                        type="button">
+                        العربية
+                    </button>
+
+
+                    <!-- Login -->
+                    <a
+                        href="login velora2.html"
+                        class="text-white fs-5"
+                        title="Login"
+                        data-i18n-title="login">
+
+                        <i class="bi bi-person"></i>
+
+                    </a>
+
+
+                    <!-- Wishlist -->
+                    <a
+                        href="wishlist velora2.html"
+                        class="text-white fs-5"
+                        title="Wishlist"
+                        data-i18n-title="wishlist">
+
+                        <i class="bi bi-heart"></i>
+
+                    </a>
+
+
+                    <!-- Cart -->
+                    <a
+                        href="cart velora2.html"
+                        class="text-white fs-5 position-relative"
+                        title="Cart"
+                        data-i18n-title="cart">
+
+                        <i class="bi bi-cart3"></i>
+
+                        <span
+                            id="cart-count"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">
+                            0
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= PAGE HEADER ================= -->
+
+    <div class="container my-4">
+
+        <nav aria-label="breadcrumb">
+
+            <ol class="breadcrumb">
+
+                <li class="breadcrumb-item">
+
+                    <a
+                        href="index velora2.html"
+                        class="text-gold text-decoration-none"
+                        data-i18n="home">
+                        Home
+                    </a>
+
+                </li>
+
+                <li
+                    class="breadcrumb-item active text-white-50"
+                    aria-current="page"
+                    data-i18n="menSection">
+                    Men's Section
+                </li>
+
+            </ol>
+
+        </nav>
+
+
+        <h2
+            class="fw-bold text-uppercase border-bottom border-secondary pb-2 text-white"
+            data-i18n="mensClothing">
+            Men's Clothing & Fashion
+        </h2>
+
+    </div>
+
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <div class="container my-5">
+
+        <div
+            class="row row-cols-1 row-cols-md-3 g-4"
+            id="men-products-grid">
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer
+        class="bg-black text-white text-center py-4 border-top border-secondary mt-5">
+
+        <div class="container">
+
+            <p
+                class="mb-1 text-white-50"
+                data-i18n="copyright">
+                All Rights Reserved © 2026 For Website
+            </p>
+
+            <p class="mb-0 fs-6">
+
+                <span data-i18n="developedBy">
+                    Developed and Designed by
+                </span>
+
+                💻 ✨
+
+                <span class="text-gold fw-bold border-bottom border-warning pb-1 ms-1">
+                    Eman Ahmad
+                </span>
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- ================= MEN PAGE SCRIPT ================= -->
+
+    <script>
+
+        /* ==========================================
+           TRANSLATIONS
+        ========================================== */
+
+        const menTranslations = {
+
+            en: {
+
+                home: "Home",
+                shop: "Shop",
+                women: "Women",
+                men: "Men",
+                kids: "Kids",
+                newArrivals: "New Arrivals",
+
+                menSection: "Men's Section",
+                mensClothing: "Men's Clothing & Fashion",
+
+                searchPlaceholder: "Search men's clothing...",
+
+                login: "Login",
+                wishlist: "Wishlist",
+                cart: "Cart",
+
+                addToCart: "Add to Cart",
+                noProducts: "No products found matching your search.",
+                addedToCart: "Added to Cart Successfully!",
+                favourite: "Add to Wishlist",
+
+                copyright: "All Rights Reserved © 2026 For Website",
+
+                developedBy: "Developed and Designed by"
+
+            },
+
+
+            ar: {
+
+                home: "الرئيسية",
+                shop: "المتجر",
+                women: "نساء",
+                men: "رجال",
+                kids: "أطفال",
+                newArrivals: "وصل حديثًا",
+
+                menSection: "قسم الرجال",
+                mensClothing: "ملابس وأزياء رجالية",
+
+                searchPlaceholder: "ابحث عن ملابس رجالية...",
+
+                login: "تسجيل الدخول",
+                wishlist: "المفضلة",
+                cart: "السلة",
+
+                addToCart: "أضف إلى السلة",
+                noProducts: "لا توجد منتجات تطابق بحثك.",
+                addedToCart: "تمت إضافة المنتج إلى السلة بنجاح!",
+                favourite: "أضف إلى المفضلة",
+
+                copyright: "جميع الحقوق محفوظة © 2026 لموقع",
+
+                developedBy: "تم التطوير والتصميم بواسطة"
+
+            }
+
+        };
+
+
+        /* ==========================================
+           PRODUCTS
+        ========================================== */
+
+        const menProducts = [
+
+            {
+                id: 14,
+
+                name: {
+                    en: "Denim Man Straight Fit Jeans - Men",
+                    ar: "جينز رجالي بقصة مستقيمة"
+                },
+
+                image_url:
+                    "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=700&q=80",
+
+                price: 970,
+
+                category: "men"
+            },
+
+
+            {
+                id: 15,
+
+                name: {
+                    en: "Royal Blue Check 3-Piece Tailored Suit - Men",
+                    ar: "بدلة رجالي 3 قطع كاروه باللون الأزرق الملكي"
+                },
+
+                image_url:
+                    "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=700&q=80",
+
+                price: 2900,
+
+                category: "men"
+            },
+
+
+            {
+                id: 16,
+
+                name: {
+                    en: "Slim Fit Chino Pants",
+                    ar: "بنطلون تشينو بقصة Slim Fit"
+                },
+
+                image_url:
+                    "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=700&q=80",
+
+                price: 750,
+
+                category: "men"
+            },
+
+
+            {
+                id: 27,
+
+                name: {
+                    en: "Hoodie + Jeans + Beanie Winter Look",
+                    ar: "إطلالة شتوية هودي وجينز وبيني"
+                },
+
+                image_url:
+                    "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=700&q=80",
+
+                price: 850,
+
+                category: "men"
+            },
+
+
+            {
+                id: 17,
+
+                name: {
+                    en: "Formal White Shirt",
+                    ar: "قميص أبيض رسمي"
+                },
+
+                image_url:
+                    "https://images.unsplash.com/photo-1621072156002-e2fccdc0b176?auto=format&fit=crop&w=700&q=80",
+
+                price: 550,
+
+                category: "men"
+            },
+
+
+            {
+                id: 18,
+
+                name: {
+                    en: "Leather Biker Jacket",
+                    ar: "جاكيت جلد بايكر"
+                },
+
+                image_url:
+                    "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=700&q=80",
+
+                price: 2100,
+
+                category: "men"
+            },
+
+
+            {
+                id: 19,
+
+                name: {
+                    en: "Royal Blue Classic Blazer - Men",
+                    ar: "بليزر كلاسيك رجالي باللون الأزرق الملكي"
+                },
+
+                image_url:
+                    "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=700&q=80",
+
+                price: 790,
+
+                category: "men"
+            },
+
+
+            {
+                id: 20,
+
+                name: {
+                    en: "Classic Beige Trench Coat - Men",
+                    ar: "ترنش كوت رجالي كلاسيك باللون البيج"
+                },
+
+                image_url:
+                    "https://images.unsplash.com/photo-1488161628813-04466f872be2?auto=format&fit=crop&w=700&q=80",
+
+                price: 1850,
+
+                category: "men"
+            }
+
+        ];
+
+
+        /* ==========================================
+           CURRENT LANGUAGE
+        ========================================== */
+
+        let currentLanguage =
+            localStorage.getItem("veloraLanguage") || "en";
+
+
+        /* ==========================================
+           ELEMENTS
+        ========================================== */
+
+        const grid =
+            document.getElementById("men-products-grid");
+
+        const searchInput =
+            document.getElementById("search-input");
+
+        const languageToggle =
+            document.getElementById("languageToggle");
+
+        const cartCount =
+            document.getElementById("cart-count");
+
+
+        /* ==========================================
+           APPLY LANGUAGE
+        ========================================== */
+
+        function applyMenLanguage() {
+
+            document.documentElement.lang =
+                currentLanguage;
+
+            document.documentElement.dir =
+                currentLanguage === "ar"
+                    ? "rtl"
+                    : "ltr";
+
+
+            /* Text */
+
+            document
+                .querySelectorAll("[data-i18n]")
+                .forEach(element => {
+
+                    const key =
+                        element.dataset.i18n;
+
+                    if (
+                        menTranslations[currentLanguage][key]
+                    ) {
+
+                        element.textContent =
+                            menTranslations[currentLanguage][key];
+
+                    }
+
+                });
+
+
+            /* Placeholders */
+
+            document
+                .querySelectorAll("[data-i18n-placeholder]")
+                .forEach(element => {
+
+                    const key =
+                        element.dataset.i18nPlaceholder;
+
+                    if (
+                        menTranslations[currentLanguage][key]
+                    ) {
+
+                        element.placeholder =
+                            menTranslations[currentLanguage][key];
+
+                    }
+
+                });
+
+
+            /* Titles */
+
+            document
+                .querySelectorAll("[data-i18n-title]")
+                .forEach(element => {
+
+                    const key =
+                        element.dataset.i18nTitle;
+
+                    if (
+                        menTranslations[currentLanguage][key]
+                    ) {
+
+                        element.title =
+                            menTranslations[currentLanguage][key];
+
+                    }
+
+                });
+
+
+            languageToggle.textContent =
+                currentLanguage === "en"
+                    ? "العربية"
+                    : "English";
+
+
+            localStorage.setItem(
+                "veloraLanguage",
+                currentLanguage
+            );
+
+
+            renderMenProducts(menProducts);
+
+        }
+
+
+        /* ==========================================
+           RENDER PRODUCTS
+        ========================================== */
+
+        function renderMenProducts(products) {
+
+            grid.innerHTML = "";
+
+
+            if (products.length === 0) {
+
+                grid.innerHTML = `
+                    <div class="col-12 text-center text-muted py-5">
+                        <h5>
+                            ${menTranslations[currentLanguage].noProducts}
+                        </h5>
+                    </div>
+                `;
+
+                return;
+            }
+
+
+            products.forEach(product => {
+
+                const productName =
+                    product.name[currentLanguage];
+
+
+                grid.innerHTML += `
+
+                    <div class="col">
+
+                        <div
+                            class="product-card p-3 shadow-sm h-100 d-flex flex-column justify-content-between"
+                            style="cursor:pointer;"
+                            data-product-id="${product.id}">
+
+                            <div>
+
+                                <img
+                                    src="${product.image_url}"
+                                    class="product-img mb-3"
+                                    alt="${productName}"
+                                    loading="lazy">
+
+
+                                <div
+                                    class="product-details text-white text-uppercase"
+                                    style="font-size:0.8rem;">
+
+                                    <h6
+                                        class="fw-semibold mb-1 text-white product-title">
+                                        ${productName}
+                                    </h6>
+
+
+                                    <div class="rating mb-1 text-gold">
+
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+
+                                    </div>
+
+
+                                    <p
+                                        class="price fw-bold text-white mb-2"
+                                        style="font-size:1rem;">
+
+                                        ${product.price} EGP
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="d-flex gap-2 mt-2">
+
+                                <button
+                                    class="btn btn-velora-gold w-75 rounded-0 add-cart-btn"
+                                    data-id="${product.id}">
+
+                                    ${menTranslations[currentLanguage].addToCart}
+
+                                </button>
+
+
+                                <button
+                                    class="btn btn-outline-warning w-25 rounded-0 wishlist-btn"
+                                    style="border-color:#d1b86c;color:#d1b86c;"
+                                    data-id="${product.id}"
+                                    title="${menTranslations[currentLanguage].favourite}">
+
+                                    <i class="bi bi-heart"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                `;
+
+            });
+
+        }
+
+
+        /* ==========================================
+           ADD TO CART
+        ========================================== */
+
+        function addMenToCart(productId) {
+
+            const product =
+                menProducts.find(
+                    item => item.id === productId
+                );
+
+
+            if (!product) {
+                return;
+            }
+
+
+            let cart =
+                JSON.parse(
+                    localStorage.getItem("veloraCart")
+                ) || [];
+
+
+            const existingItem =
+                cart.find(
+                    item => item.id === product.id
+                );
+
+
+            if (existingItem) {
+
+                existingItem.quantity += 1;
+
+            } else {
+
+                cart.push({
+
+                    id: product.id,
+
+                    name:
+                        product.name.en,
+
+                    nameTranslations:
+                        product.name,
+
+                    price:
+                        product.price,
+
+                    image:
+                        product.image_url,
+
+                    category:
+                        product.category,
+
+                    quantity: 1
+
+                });
+
+            }
+
+
+            localStorage.setItem(
+                "veloraCart",
+                JSON.stringify(cart)
+            );
+
+
+            updateMenCartCount();
+
+
+            alert(
+                menTranslations[currentLanguage].addedToCart
+            );
+
+        }
+
+
+        /* ==========================================
+           ADD TO WISHLIST
+        ========================================== */
+
+        function addMenToWishlist(productId) {
+
+            const product =
+                menProducts.find(
+                    item => item.id === productId
+                );
+
+
+            if (!product) {
+                return;
+            }
+
+
+            let wishlist =
+                JSON.parse(
+                    localStorage.getItem("veloraWishlist")
+                ) || [];
+
+
+            const exists =
+                wishlist.some(
+                    item => item.id === product.id
+                );
+
+
+            if (!exists) {
+
+                wishlist.push({
+
+                    id: product.id,
+
+                    name:
+                        product.name.en,
+
+                    nameTranslations:
+                        product.name,
+
+                    price:
+                        product.price,
+
+                    image:
+                        product.image_url,
+
+                    category:
+                        product.category
+
+                });
+
+
+                localStorage.setItem(
+                    "veloraWishlist",
+                    JSON.stringify(wishlist)
+                );
+
+            }
+
+
+            window.location.href =
+                "wishlist velora2.html";
+
+        }
+
+
+        /* ==========================================
+           VIEW PRODUCT
+        ========================================== */
+
+        function viewMenProduct(productId) {
+
+            const product =
+                menProducts.find(
+                    item => item.id === productId
+                );
+
+
+            if (!product) {
+                return;
+            }
+
+
+            const selectedProduct = {
+
+                id:
+                    product.id,
+
+                name:
+                    product.name.en,
+
+                nameTranslations:
+                    product.name,
+
+                price:
+                    product.price,
+
+                image:
+                    product.image_url,
+
+                category:
+                    product.category
+
+            };
+
+
+            localStorage.setItem(
+                "selectedProduct",
+                JSON.stringify(selectedProduct)
+            );
+
+
+            window.location.href =
+                "product-details velora2.html";
+
+        }
+
+
+        /* ==========================================
+           CART COUNT
+        ========================================== */
+
+        function updateMenCartCount() {
+
+            const cart =
+                JSON.parse(
+                    localStorage.getItem("veloraCart")
+                ) || [];
+
+
+            const totalQuantity =
+                cart.reduce(
+                    (total, item) =>
+                        total + (item.quantity || 1),
+                    0
+                );
+
+
+            cartCount.textContent =
+                totalQuantity;
+
+        }
+
+
+        /* ==========================================
+           SEARCH
+        ========================================== */
+
+        function searchMenProducts() {
+
+            const term =
+                searchInput.value
+                    .toLowerCase()
+                    .trim();
+
+
+            const filteredProducts =
+                menProducts.filter(product => {
+
+                    const englishName =
+                        product.name.en.toLowerCase();
+
+                    const arabicName =
+                        product.name.ar.toLowerCase();
+
+
+                    return (
+                        englishName.includes(term) ||
+                        arabicName.includes(term)
+                    );
+
+                });
+
+
+            renderMenProducts(filteredProducts);
+
+        }
+
+
+        /* ==========================================
+           EVENTS
+        ========================================== */
+
+        languageToggle.addEventListener(
+            "click",
+            () => {
+
+                currentLanguage =
+                    currentLanguage === "en"
+                        ? "ar"
+                        : "en";
+
+                applyMenLanguage();
+
+            }
+        );
+
+
+        searchInput.addEventListener(
+            "input",
+            searchMenProducts
+        );
+
+
+        grid.addEventListener(
+            "click",
+            event => {
+
+                const cartButton =
+                    event.target.closest(".add-cart-btn");
+
+                const wishlistButton =
+                    event.target.closest(".wishlist-btn");
+
+                const productCard =
+                    event.target.closest(".product-card");
+
+
+                if (cartButton) {
+
+                    const productId =
+                        Number(cartButton.dataset.id);
+
+                    addMenToCart(productId);
+
+                    return;
+                }
+
+
+                if (wishlistButton) {
+
+                    const productId =
+                        Number(wishlistButton.dataset.id);
+
+                    addMenToWishlist(productId);
+
+                    return;
+                }
+
+
+                if (productCard) {
+
+                    const productId =
+                        Number(productCard.dataset.productId);
+
+                    viewMenProduct(productId);
+
+                }
+
+            }
+        );
+
+
+        /* ==========================================
+           STORAGE EVENT
+        ========================================== */
+
+        window.addEventListener(
+            "storage",
+            event => {
+
+                if (
+                    event.key === "veloraCart"
+                ) {
+
+                    updateMenCartCount();
+
+                }
+
+            }
+        );
+
+
+        /* ==========================================
+           INITIALIZE
+        ========================================== */
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            () => {
+
+                applyMenLanguage();
+
+                updateMenCartCount();
+
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>

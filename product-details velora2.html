@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Velora - Product Details</title>
+
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+
+    <!-- Velora 2 CSS -->
+    <link
+        rel="stylesheet"
+        href="style velora2.css">
+
+
+    <style>
+
+        body {
+            background-color: #000000 !important;
+            color: #ffffff !important;
+        }
+
+
+        .text-gold {
+            color: #d1b86c !important;
+        }
+
+
+        .btn-velora-gold {
+
+            background-color: #d1b86c;
+            border-color: #d1b86c;
+            color: #000000;
+
+            text-transform: uppercase;
+            font-weight: bold;
+
+            border-radius: 0;
+        }
+
+
+        .btn-velora-gold:hover {
+
+            background-color: #bfa55a;
+            border-color: #bfa55a;
+            color: #000000;
+        }
+
+
+        .main-img {
+
+            border-radius: 12px;
+
+            object-fit: cover;
+
+            width: 100%;
+            height: 500px;
+
+            border: 1px solid #333;
+
+            background-color: #111;
+        }
+
+
+        .thumb-img {
+
+            width: 80px;
+            height: 90px;
+
+            object-fit: cover;
+
+            border-radius: 8px;
+
+            cursor: pointer;
+
+            border: 2px solid transparent;
+
+            transition: all 0.2s ease;
+        }
+
+
+        .thumb-img:hover,
+        .thumb-img.active {
+
+            border-color: #d1b86c;
+        }
+
+
+        .size-btn {
+
+            width: 45px;
+            height: 45px;
+
+            border-radius: 8px;
+
+            border: 1px solid #444;
+
+            background: #111;
+
+            color: #fff;
+
+            font-weight: bold;
+
+            transition: 0.2s;
+        }
+
+
+        .size-btn:hover,
+        .size-btn.active {
+
+            border-color: #d1b86c;
+
+            background-color: #d1b86c;
+
+            color: #000;
+        }
+
+
+        .color-dot {
+
+            width: 30px;
+            height: 30px;
+
+            border-radius: 50%;
+
+            display: inline-block;
+
+            cursor: pointer;
+
+            border: 2px solid transparent;
+        }
+
+
+        .color-dot.active {
+
+            border-color: #d1b86c;
+        }
+
+
+        .product-description {
+
+            line-height: 1.9;
+        }
+
+
+        html[dir="rtl"] .product-description {
+
+            text-align: right;
+        }
+
+
+        html[dir="rtl"] .breadcrumb {
+
+            direction: rtl;
+        }
+
+
+        html[dir="rtl"] .product-info {
+
+            text-align: right;
+        }
+
+
+        .language-btn {
+
+            border: 1px solid #d1b86c;
+
+            color: #d1b86c;
+
+            background: transparent;
+
+            border-radius: 0;
+
+            padding: 5px 10px;
+
+            font-size: 0.8rem;
+        }
+
+
+        .language-btn:hover {
+
+            background-color: #d1b86c;
+
+            color: #000;
+        }
+
+
+        .quantity-input {
+
+            width: 55px !important;
+
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+
+
+<body class="bg-black text-white">
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav
+        class="navbar navbar-expand-lg navbar-dark bg-black py-3 border-bottom border-secondary sticky-top">
+
+
+        <div class="container">
+
+
+            <!-- Logo -->
+
+            <a
+                class="navbar-brand fw-bold fs-3 text-gold tracking-widest"
+                href="index velora2.html">
+
+                VELORA
+
+            </a>
+
+
+            <!-- Mobile Button -->
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div
+                class="collapse navbar-collapse"
+                id="navbarNav">
+
+
+                <!-- Navigation -->
+
+                <ul
+                    class="navbar-nav mx-auto mb-2 mb-lg-0 fw-semibold">
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="index velora2.html"
+                            data-i18n="home">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="shop velora2.html"
+                            data-i18n="shop">
+
+                            Shop
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="women velora2.html"
+                            data-i18n="women">
+
+                            Women
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="men velora2.html"
+                            data-i18n="men">
+
+                            Men
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="kids velora2.html"
+                            data-i18n="kids">
+
+                            Kids
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="new-arrivals velora2.html"
+                            data-i18n="newArrivals">
+
+                            New Arrivals
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+
+                <!-- Navbar Tools -->
+
+                <div
+                    class="d-flex align-items-center gap-3 flex-wrap">
+
+
+                    <!-- Language -->
+
+                    <button
+                        id="languageToggle"
+                        class="language-btn"
+                        type="button">
+
+                        العربية
+
+                    </button>
+
+
+                    <!-- Wishlist -->
+
+                    <a
+                        href="wishlist velora2.html"
+                        class="text-white fs-5"
+                        title="Wishlist"
+                        data-i18n-title="wishlist">
+
+                        <i class="bi bi-heart"></i>
+
+                    </a>
+
+
+                    <!-- Cart -->
+
+                    <a
+                        href="cart velora2.html"
+                        class="text-white fs-5 position-relative"
+                        title="Cart"
+                        data-i18n-title="cart">
+
+                        <i class="bi bi-cart3"></i>
+
+
+                        <span
+                            id="cart-badge"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark"
+                            style="font-size:0.65rem;">
+
+                            0
+
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= BREADCRUMB ================= -->
+
+    <div class="container my-4">
+
+        <nav aria-label="breadcrumb">
+
+            <ol class="breadcrumb">
+
+
+                <li class="breadcrumb-item">
+
+                    <a
+                        href="index velora2.html"
+                        class="text-gold text-decoration-none"
+                        data-i18n="home">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+
+                <li
+                    class="breadcrumb-item active text-white-50"
+                    id="breadcrumb-title"
+                    aria-current="page">
+
+                    Product Details
+
+                </li>
+
+            </ol>
+
+        </nav>
+
+    </div>
+
+
+    <!-- ================= PRODUCT DETAILS ================= -->
+
+    <div class="container my-5">
+
+        <div class="row g-5">
+
+
+            <!-- ================= IMAGES ================= -->
+
+            <div class="col-lg-6">
+
+
+                <img
+                    id="currentMainImg"
+                    src=""
+                    class="main-img mb-3 shadow"
+                    alt="Product Image">
+
+
+                <div
+                    class="d-flex gap-3 flex-wrap"
+                    id="thumbnails-container">
+
+                    <!-- Thumbnails generated by JS -->
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= PRODUCT INFO ================= -->
+
+            <div
+                class="col-lg-6 product-info">
+
+
+                <!-- Badge -->
+
+                <span
+                    class="badge bg-warning text-dark mb-2 fw-bold"
+                    data-i18n="exclusive">
+
+                    Exclusive
+
+                </span>
+
+
+                <!-- Product Name -->
+
+                <h2
+                    id="product-name"
+                    class="fw-bold text-uppercase mb-2 text-white">
+
+                    Loading...
+
+                </h2>
+
+
+                <!-- Rating -->
+
+                <div
+                    class="d-flex align-items-center gap-2 mb-3">
+
+
+                    <div class="text-gold">
+
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+
+                    </div>
+
+
+                    <span
+                        class="text-white-50 small"
+                        data-i18n="reviews">
+
+                        (120 Reviews)
+
+                    </span>
+
+                </div>
+
+
+                <!-- Price -->
+
+                <h3
+                    id="product-price"
+                    class="fw-bold text-gold mb-4">
+
+                    0 EGP
+
+                </h3>
+
+
+                <!-- Description -->
+
+                <p
+                    class="text-white-50 mb-4 product-description"
+                    data-i18n="description">
+
+                    High quality materials, elegant design,
+                    perfect for all occasions and daily wear.
+
+                </p>
+
+
+                <hr class="border-secondary mb-4">
+
+
+                <!-- ================= COLOR ================= -->
+
+                <div class="mb-4">
+
+
+                    <h6
+                        class="fw-bold mb-2"
+                        data-i18n="color">
+
+                        Color:
+
+                    </h6>
+
+
+                    <div class="d-flex gap-2">
+
+
+                        <span
+                            class="color-dot active"
+                            style="background-color:#f4f4f4;"
+                            title="White">
+                        </span>
+
+
+                        <span
+                            class="color-dot"
+                            style="background-color:#2b2b2b;"
+                            title="Black">
+                        </span>
+
+
+                        <span
+                            class="color-dot"
+                            style="background-color:#c5a059;"
+                            title="Gold">
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= SIZE ================= -->
+
+                <div class="mb-4">
+
+
+                    <h6
+                        class="fw-bold mb-2"
+                        data-i18n="size">
+
+                        Size:
+
+                    </h6>
+
+
+                    <div class="d-flex gap-2">
+
+
+                        <button
+                            class="size-btn"
+                            type="button">
+
+                            S
+
+                        </button>
+
+
+                        <button
+                            class="size-btn active"
+                            type="button">
+
+                            M
+
+                        </button>
+
+
+                        <button
+                            class="size-btn"
+                            type="button">
+
+                            L
+
+                        </button>
+
+
+                        <button
+                            class="size-btn"
+                            type="button">
+
+                            XL
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= QUANTITY + BUTTONS ================= -->
+
+                <div
+                    class="d-flex align-items-center gap-3 mb-4 flex-wrap">
+
+
+                    <!-- Quantity -->
+
+                    <div
+                        class="input-group"
+                        style="width:130px;">
+
+
+                        <button
+                            class="btn btn-outline-secondary text-white"
+                            type="button"
+                            id="decreaseQty">
+
+                            -
+
+                        </button>
+
+
+                        <input
+                            type="text"
+                            id="qtyInput"
+                            class="form-control quantity-input bg-dark text-white border-secondary"
+                            value="1">
+
+
+                        <button
+                            class="btn btn-outline-secondary text-white"
+                            type="button"
+                            id="increaseQty">
+
+                            +
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- Add To Cart -->
+
+                    <button
+                        id="addToCartBtn"
+                        class="btn btn-velora-gold btn-lg flex-grow-1 fw-bold"
+                        type="button">
+
+
+                        <i class="bi bi-cart-plus me-2"></i>
+
+
+                        <span data-i18n="addToCart">
+                            Add to Cart
+                        </span>
+
+                    </button>
+
+
+                    <!-- Wishlist -->
+
+                    <button
+                        id="addToWishlistBtn"
+                        class="btn btn-outline-warning btn-lg"
+                        style="border-color:#d1b86c;color:#d1b86c;"
+                        type="button"
+                        title="Wishlist"
+                        data-i18n-title="wishlist">
+
+
+                        <i class="bi bi-heart"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer
+        class="bg-black text-white text-center py-4 border-top border-secondary mt-5">
+
+
+        <div class="container">
+
+
+            <p
+                class="mb-1 text-white-50"
+                data-i18n="copyright">
+
+                All Rights Reserved © 2026 For Website VELORA
+
+            </p>
+
+
+            <p class="mb-0 fs-6">
+
+
+                <span data-i18n="developedBy">
+
+                    Developed and Designed by
+
+                </span>
+
+
+                💻 ✨
+
+
+                <span
+                    class="text-gold fw-bold border-bottom border-warning pb-1 ms-1">
+
+                    Eman Ahmad
+
+                </span>
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- ================= PRODUCT DETAILS SCRIPT ================= -->
+
+    <script>
+
+        /* ==========================================
+           TRANSLATIONS
+        ========================================== */
+
+        const productDetailsTranslations = {
+
+            en: {
+
+                home: "Home",
+                shop: "Shop",
+                women: "Women",
+                men: "Men",
+                kids: "Kids",
+                newArrivals: "New Arrivals",
+
+                exclusive: "Exclusive",
+
+                reviews: "(120 Reviews)",
+
+                description:
+                    "High quality materials, elegant design, perfect for all occasions and daily wear.",
+
+                color: "Color:",
+
+                size: "Size:",
+
+                addToCart: "Add to Cart",
+
+                wishlist: "Wishlist",
+
+                cart: "Cart",
+
+                addedToCart:
+                    "Added to Cart Successfully!",
+
+                noProduct:
+                    "No product was selected.",
+
+                goHome:
+                    "Go back to Home",
+
+                copyright:
+                    "All Rights Reserved © 2026 For Website VELORA",
+
+                developedBy:
+                    "Developed and Designed by"
+
+            },
+
+
+            ar: {
+
+                home: "الرئيسية",
+                shop: "المتجر",
+                women: "نساء",
+                men: "رجال",
+                kids: "أطفال",
+                newArrivals: "وصل حديثًا",
+
+                exclusive: "حصري",
+
+                reviews: "(120 تقييم)",
+
+                description:
+                    "خامات عالية الجودة، تصميم أنيق، مناسب لجميع المناسبات والارتداء اليومي.",
+
+                color: "اللون:",
+
+                size: "المقاس:",
+
+                addToCart: "أضف إلى السلة",
+
+                wishlist: "المفضلة",
+
+                cart: "السلة",
+
+                addedToCart:
+                    "تمت إضافة المنتج إلى السلة بنجاح!",
+
+                noProduct:
+                    "لم يتم اختيار أي منتج.",
+
+                goHome:
+                    "العودة إلى الرئيسية",
+
+                copyright:
+                    "جميع الحقوق محفوظة © 2026 لموقع VELORA",
+
+                developedBy:
+                    "تم التطوير والتصميم بواسطة"
+
+            }
+
+        };
+
+
+        /* ==========================================
+           VARIABLES
+        ========================================== */
+
+        let currentLanguage =
+            localStorage.getItem("veloraLanguage") || "en";
+
+
+        let selectedProduct =
+            JSON.parse(
+                localStorage.getItem("selectedProduct")
+            );
+
+
+        /* ==========================================
+           ELEMENTS
+        ========================================== */
+
+        const productNameElement =
+            document.getElementById("product-name");
+
+        const productPriceElement =
+            document.getElementById("product-price");
+
+        const mainImage =
+            document.getElementById("currentMainImg");
+
+        const breadcrumbTitle =
+            document.getElementById("breadcrumb-title");
+
+        const thumbnailsContainer =
+            document.getElementById("thumbnails-container");
+
+        const qtyInput =
+            document.getElementById("qtyInput");
+
+        const cartBadge =
+            document.getElementById("cart-badge");
+
+        const languageToggle =
+            document.getElementById("languageToggle");
+
+
+        /* ==========================================
+           APPLY LANGUAGE
+        ========================================== */
+
+        function applyProductLanguage() {
+
+            document.documentElement.lang =
+                currentLanguage;
+
+
+            document.documentElement.dir =
+                currentLanguage === "ar"
+                    ? "rtl"
+                    : "ltr";
+
+
+            /* Text */
+
+            document
+                .querySelectorAll("[data-i18n]")
+                .forEach(element => {
+
+                    const key =
+                        element.dataset.i18n;
+
+
+                    if (
+                        productDetailsTranslations[currentLanguage][key]
+                    ) {
+
+                        element.textContent =
+                            productDetailsTranslations[currentLanguage][key];
+
+                    }
+
+                });
+
+
+            /* Titles */
+
+            document
+                .querySelectorAll("[data-i18n-title]")
+                .forEach(element => {
+
+                    const key =
+                        element.dataset.i18nTitle;
+
+
+                    if (
+                        productDetailsTranslations[currentLanguage][key]
+                    ) {
+
+                        element.title =
+                            productDetailsTranslations[currentLanguage][key];
+
+                    }
+
+                });
+
+
+            languageToggle.textContent =
+                currentLanguage === "en"
+                    ? "العربية"
+                    : "English";
+
+
+            localStorage.setItem(
+                "veloraLanguage",
+                currentLanguage
+            );
+
+
+            renderSelectedProduct();
+
+        }
+
+
+        /* ==========================================
+           RENDER SELECTED PRODUCT
+        ========================================== */
+
+        function renderSelectedProduct() {
+
+            if (!selectedProduct) {
+
+                productNameElement.textContent =
+                    productDetailsTranslations[currentLanguage].noProduct;
+
+                productPriceElement.textContent =
+                    "0 EGP";
+
+
+                mainImage.style.display =
+                    "none";
+
+
+                thumbnailsContainer.innerHTML = `
+                    <a
+                        href="index velora2.html"
+                        class="btn btn-velora-gold mt-3">
+
+                        ${productDetailsTranslations[currentLanguage].goHome}
+
+                    </a>
+                `;
+
+                return;
+            }
+
+
+            /* Product Name */
+
+            let displayName =
+                selectedProduct.name;
+
+
+            if (
+                selectedProduct.nameTranslations &&
+                selectedProduct.nameTranslations[currentLanguage]
+            ) {
+
+                displayName =
+                    selectedProduct.nameTranslations[currentLanguage];
+
+            }
+
+
+            productNameElement.textContent =
+                displayName;
+
+
+            /* Price */
+
+            const numericPrice =
+                Number(selectedProduct.price);
+
+
+            productPriceElement.textContent =
+                Number.isFinite(numericPrice)
+                    ? `${numericPrice} EGP`
+                    : selectedProduct.price;
+
+
+            /* Main Image */
+
+            mainImage.src =
+                selectedProduct.image || "";
+
+
+            mainImage.alt =
+                displayName;
+
+
+            mainImage.style.display =
+                "block";
+
+
+            /* Breadcrumb */
+
+            breadcrumbTitle.textContent =
+                displayName;
+
+
+            /* Thumbnails */
+
+            renderThumbnails();
+
+        }
+
+
+        /* ==========================================
+           THUMBNAILS
+        ========================================== */
+
+        function renderThumbnails() {
+
+            if (!selectedProduct) {
+                return;
+            }
+
+
+            const mainProductImage =
+                selectedProduct.image;
+
+
+            thumbnailsContainer.innerHTML = `
+
+                <img
+                    src="${mainProductImage}"
+                    class="thumb-img active"
+                    alt="Product image"
+                    data-image="${mainProductImage}">
+
+                <img
+                    src="https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=300&q=80"
+                    class="thumb-img"
+                    alt="Product image"
+                    data-image="https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=300&q=80">
+
+                <img
+                    src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=300&q=80"
+                    class="thumb-img"
+                    alt="Product image"
+                    data-image="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=300&q=80">
+
+            `;
+
+        }
+
+
+        /* ==========================================
+           CHANGE IMAGE
+        ========================================== */
+
+        thumbnailsContainer.addEventListener(
+            "click",
+            event => {
+
+                const thumbnail =
+                    event.target.closest(".thumb-img");
+
+
+                if (!thumbnail) {
+                    return;
+                }
+
+
+                mainImage.src =
+                    thumbnail.dataset.image;
+
+
+                document
+                    .querySelectorAll(".thumb-img")
+                    .forEach(image => {
+
+                        image.classList.remove("active");
+
+                    });
+
+
+                thumbnail.classList.add("active");
+
+            }
+        );
+
+
+        /* ==========================================
+           QUANTITY
+        ========================================== */
+
+        function adjustQuantity(amount) {
+
+            let currentQuantity =
+                parseInt(qtyInput.value) || 1;
+
+
+            currentQuantity += amount;
+
+
+            if (currentQuantity < 1) {
+
+                currentQuantity = 1;
+
+            }
+
+
+            qtyInput.value =
+                currentQuantity;
+
+        }
+
+
+        document
+            .getElementById("decreaseQty")
+            .addEventListener(
+                "click",
+                () => adjustQuantity(-1)
+            );
+
+
+        document
+            .getElementById("increaseQty")
+            .addEventListener(
+                "click",
+                () => adjustQuantity(1)
+            );
+
+
+        qtyInput.addEventListener(
+            "input",
+            () => {
+
+                let value =
+                    parseInt(qtyInput.value);
+
+
+                if (
+                    !Number.isFinite(value) ||
+                    value < 1
+                ) {
+
+                    value = 1;
+
+                }
+
+
+                qtyInput.value =
+                    value;
+
+            }
+        );
+
+
+        /* ==========================================
+           SIZE SELECTION
+        ========================================== */
+
+        document
+            .querySelectorAll(".size-btn")
+            .forEach(button => {
+
+                button.addEventListener(
+                    "click",
+                    () => {
+
+                        document
+                            .querySelectorAll(".size-btn")
+                            .forEach(item =>
+                                item.classList.remove("active")
+                            );
+
+
+                        button.classList.add("active");
+
+                    }
+                );
+
+            });
+
+
+        /* ==========================================
+           COLOR SELECTION
+        ========================================== */
+
+        document
+            .querySelectorAll(".color-dot")
+            .forEach(dot => {
+
+                dot.addEventListener(
+                    "click",
+                    () => {
+
+                        document
+                            .querySelectorAll(".color-dot")
+                            .forEach(item =>
+                                item.classList.remove("active")
+                            );
+
+
+                        dot.classList.add("active");
+
+                    }
+                );
+
+            });
+
+
+        /* ==========================================
+           ADD TO CART
+        ========================================== */
+
+        function addToCartFromDetails() {
+
+            if (!selectedProduct) {
+                return;
+            }
+
+
+            const quantity =
+                parseInt(qtyInput.value) || 1;
+
+
+            let cart =
+                JSON.parse(
+                    localStorage.getItem("veloraCart")
+                ) || [];
+
+
+            const existingItem =
+                cart.find(
+                    item =>
+                        item.id === selectedProduct.id
+                );
+
+
+            const productName =
+                selectedProduct.name;
+
+
+            const productPrice =
+                Number(selectedProduct.price);
+
+
+            if (existingItem) {
+
+                existingItem.quantity +=
+                    quantity;
+
+            } else {
+
+                cart.push({
+
+                    id:
+                        selectedProduct.id,
+
+                    name:
+                        productName,
+
+                    nameTranslations:
+                        selectedProduct.nameTranslations || {
+                            en: productName,
+                            ar: productName
+                        },
+
+                    price:
+                        Number.isFinite(productPrice)
+                            ? productPrice
+                            : selectedProduct.price,
+
+                    image:
+                        selectedProduct.image,
+
+                    category:
+                        selectedProduct.category || "",
+
+                    quantity:
+                        quantity
+
+                });
+
+            }
+
+
+            localStorage.setItem(
+                "veloraCart",
+                JSON.stringify(cart)
+            );
+
+
+            updateCartBadge();
+
+
+            alert(
+                productDetailsTranslations[currentLanguage].addedToCart
+            );
+
+        }
+
+
+        /* ==========================================
+           ADD TO WISHLIST
+        ========================================== */
+
+        function addToWishlistFromDetails() {
+
+            if (!selectedProduct) {
+                return;
+            }
+
+
+            let wishlist =
+                JSON.parse(
+                    localStorage.getItem("veloraWishlist")
+                ) || [];
+
+
+            const exists =
+                wishlist.some(
+                    item =>
+                        item.id === selectedProduct.id
+                );
+
+
+            if (!exists) {
+
+                wishlist.push({
+
+                    id:
+                        selectedProduct.id,
+
+                    name:
+                        selectedProduct.name,
+
+                    nameTranslations:
+                        selectedProduct.nameTranslations || {
+                            en: selectedProduct.name,
+                            ar: selectedProduct.name
+                        },
+
+                    price:
+                        Number(selectedProduct.price),
+
+                    image:
+                        selectedProduct.image,
+
+                    category:
+                        selectedProduct.category || ""
+
+                });
+
+
+                localStorage.setItem(
+                    "veloraWishlist",
+                    JSON.stringify(wishlist)
+                );
+
+            }
+
+
+            window.location.href =
+                "wishlist velora2.html";
+
+        }
+
+
+        /* ==========================================
+           CART BADGE
+        ========================================== */
+
+        function updateCartBadge() {
+
+            const cart =
+                JSON.parse(
+                    localStorage.getItem("veloraCart")
+                ) || [];
+
+
+            const totalCount =
+                cart.reduce(
+                    (sum, item) =>
+                        sum + (item.quantity || 1),
+                    0
+                );
+
+
+            cartBadge.textContent =
+                totalCount;
+
+        }
+
+
+        /* ==========================================
+           LANGUAGE TOGGLE
+        ========================================== */
+
+        languageToggle.addEventListener(
+            "click",
+            () => {
+
+                currentLanguage =
+                    currentLanguage === "en"
+                        ? "ar"
+                        : "en";
+
+
+                applyProductLanguage();
+
+            }
+        );
+
+
+        /* ==========================================
+           BUTTON EVENTS
+        ========================================== */
+
+        document
+            .getElementById("addToCartBtn")
+            .addEventListener(
+                "click",
+                addToCartFromDetails
+            );
+
+
+        document
+            .getElementById("addToWishlistBtn")
+            .addEventListener(
+                "click",
+                addToWishlistFromDetails
+            );
+
+
+        /* ==========================================
+           STORAGE EVENT
+        ========================================== */
+
+        window.addEventListener(
+            "storage",
+            event => {
+
+                if (
+                    event.key === "veloraCart"
+                ) {
+
+                    updateCartBadge();
+
+                }
+
+            }
+        );
+
+
+        /* ==========================================
+           INITIALIZE
+        ========================================== */
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            () => {
+
+                applyProductLanguage();
+
+                updateCartBadge();
+
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>

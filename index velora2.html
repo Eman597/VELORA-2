@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Velora - Online Store | Home</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Velora CSS -->
+    <link rel="stylesheet" href="style velora2.css">
+</head>
+
+<body class="bg-black text-white">
+
+    <!-- ============================================
+         NAVBAR
+         ============================================ -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+
+        <div class="container-fluid px-5">
+
+            <!-- Logo -->
+            <a
+                class="navbar-brand text-gold fw-bold fs-3"
+                href="index velora2.html">
+                VELORA
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#veloraNav"
+                aria-controls="veloraNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="veloraNav">
+
+                <!-- Navigation Links -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-uppercase fw-semibold">
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link active text-gold"
+                            href="index velora2.html"
+                            data-i18n="home">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="shop velora2.html"
+                            data-i18n="shop">
+                            Shop
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="women velora2.html"
+                            data-i18n="women">
+                            Women
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="men velora2.html"
+                            data-i18n="men">
+                            Men
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="kids velora2.html"
+                            data-i18n="kids">
+                            Kids
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="new-arrivals velora2.html"
+                            data-i18n="newArrivals">
+                            New Arrivals
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!-- Right Side Controls -->
+                <div class="d-flex align-items-center gap-3 text-white">
+
+                    <!-- Search -->
+                    <div class="input-group input-group-sm">
+
+                        <input
+                            id="search-input"
+                            type="text"
+                            class="form-control bg-dark text-white border-secondary"
+                            placeholder="Search..."
+                            data-i18n-placeholder="searchPlaceholder"
+                            autocomplete="off">
+
+                        <button
+                            class="btn btn-outline-secondary text-gold"
+                            type="button"
+                            aria-label="Search">
+
+                            <i class="bi bi-search"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- Language -->
+                    <button
+                        id="languageToggle"
+                        class="btn btn-sm btn-outline-light text-nowrap"
+                        type="button">
+                        العربية
+                    </button>
+
+
+                    <!-- Login -->
+                    <a
+                        href="login velora2.html"
+                        class="text-white nav-link fs-5"
+                        title="Login"
+                        data-i18n-title="login">
+
+                        <i class="bi bi-person"></i>
+
+                    </a>
+
+
+                    <!-- Wishlist -->
+                    <a
+                        href="wishlist velora2.html"
+                        class="text-white nav-link fs-5"
+                        title="Favourite"
+                        data-i18n-title="favourite">
+
+                        <i class="bi bi-heart"></i>
+
+                    </a>
+
+
+                    <!-- Cart -->
+                    <a
+                        href="cart velora2.html"
+                        class="text-white position-relative fs-5 nav-link"
+                        title="Cart"
+                        data-i18n-title="cart">
+
+                        <i class="bi bi-cart3"></i>
+
+                        <span
+                            id="cartCount"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                            style="font-size: 0.6rem;">
+                            0
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ============================================
+         HERO BANNER
+         ============================================ -->
+
+    <header class="hero-banner py-5 bg-black">
+
+        <div class="container text-center">
+
+            <div
+                class="row align-items-center p-5 rounded-4 shadow-lg position-relative overflow-hidden"
+                style="
+                    background:
+                    linear-gradient(
+                        rgba(0, 0, 0, 0.6),
+                        rgba(0, 0, 0, 0.7)
+                    ),
+                    url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&q=80')
+                    center/cover no-repeat;
+                    min-height: 420px;
+                ">
+
+                <div class="col-12 z-3">
+
+                    <h1
+                        class="display-1 fw-bolder tracking-tight text-white mb-2"
+                        style="letter-spacing: 3px;"
+                        data-i18n="summerSale">
+
+                        SUMMER
+                        <span class="text-gold">SALE</span>
+
+                    </h1>
+
+                    <p
+                        class="lead fs-2 fw-semibold text-light mb-4"
+                        data-i18n="upTo50">
+                        UP TO 50% OFF
+                    </p>
+
+                    <a
+                        href="shop velora2.html"
+                        class="btn btn-velora-gold btn-lg px-5 py-3 fw-bold text-uppercase shadow text-decoration-none"
+                        data-i18n="shopNow">
+
+                        Shop Now
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ============================================
+         NEW ARRIVALS
+         ============================================ -->
+
+    <section
+        id="new-arrivals"
+        class="new-arrivals py-5">
+
+        <div class="container text-center">
+
+            <h2
+                class="text-uppercase fw-bold mb-5 fs-1 text-white"
+                data-i18n="newArrivals">
+
+                NEW ARRIVALS
+
+            </h2>
+
+
+            <!-- Products -->
+            <div
+                id="product-grid"
+                class="row row-cols-1 row-cols-md-3 g-4 justify-content-center px-2">
+
+                <!-- Products generated by JavaScript -->
+
+            </div>
+
+
+            <!-- Browse All Products -->
+            <div class="text-center mt-5">
+
+                <a
+                    href="shop velora2.html"
+                    class="btn btn-velora-light btn-lg px-5 text-decoration-none"
+                    data-i18n="browseProducts">
+
+                    Browse All Products
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+
+    <footer
+        class="bg-black text-white text-center py-4 border-top border-secondary mt-5">
+
+        <div class="container">
+
+            <p
+                class="mb-1 text-white-50"
+                data-i18n="copyright">
+
+                All Rights Reserved © 2026 For website
+
+                <span class="text-gold fw-bold">
+                    VELORA
+                </span>
+
+            </p>
+
+
+            <p
+                class="mb-0 fs-6"
+                data-i18n="developedBy">
+
+                Developed and Designed by 💻 ✨
+
+                <span class="text-gold fw-bold border-bottom border-warning pb-1 ms-1">
+                    Eman Ahmad
+                </span>
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- Velora JavaScript -->
+    <script src="script velora2.js"></script>
+
+</body>
+
+</html>

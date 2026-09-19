@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Velora - Wishlist</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    >
+
+    <!-- Velora 2 CSS -->
+    <link
+        rel="stylesheet"
+        href="style velora2.css"
+    >
+</head>
+
+
+<body class="bg-black text-white">
+
+
+    <!-- ============================================
+         NAVBAR
+         ============================================ -->
+
+    <nav
+        class="navbar navbar-expand-lg navbar-dark bg-black py-3 border-bottom border-secondary"
+    >
+
+        <div class="container">
+
+            <!-- Logo -->
+
+            <a
+                class="navbar-brand fw-bold fs-3 text-gold tracking-widest"
+                href="index velora2.html"
+            >
+                VELORA
+            </a>
+
+
+            <!-- Mobile button -->
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div
+                class="collapse navbar-collapse"
+                id="navbarNav"
+            >
+
+                <!-- Navigation -->
+
+                <ul
+                    class="navbar-nav mx-auto mb-2 mb-lg-0 fw-semibold"
+                >
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="index velora2.html"
+                            data-i18n="navHome"
+                        >
+                            Home
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="shop velora2.html"
+                            data-i18n="navShop"
+                        >
+                            Shop
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="women velora2.html"
+                            data-i18n="navWomen"
+                        >
+                            Women
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="men velora2.html"
+                            data-i18n="navMen"
+                        >
+                            Men
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="kids velora2.html"
+                            data-i18n="navKids"
+                        >
+                            Kids
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="new-arrivals velora2.html"
+                            data-i18n="navNewArrivals"
+                        >
+                            New Arrivals
+                        </a>
+
+                    </li>
+
+                </ul>
+
+
+                <!-- Right side -->
+
+                <div class="d-flex align-items-center gap-3">
+
+                    <!-- Language -->
+
+                    <button
+                        id="languageToggle"
+                        type="button"
+                        class="btn btn-sm btn-outline-warning"
+                    >
+                        AR
+                    </button>
+
+
+                    <!-- Login -->
+
+                    <a
+                        href="login velora2.html"
+                        class="text-white fs-5"
+                        title="Login"
+                        data-i18n-title="login"
+                    >
+                        <i class="bi bi-person"></i>
+                    </a>
+
+
+                    <!-- Wishlist -->
+
+                    <a
+                        href="wishlist velora2.html"
+                        class="text-gold fs-5"
+                        title="Wishlist"
+                        data-i18n-title="wishlist"
+                    >
+                        <i class="bi bi-heart-fill"></i>
+                    </a>
+
+
+                    <!-- Cart -->
+
+                    <a
+                        href="cart velora2.html"
+                        class="text-white fs-5 position-relative"
+                        title="Cart"
+                        data-i18n-title="cart"
+                    >
+
+                        <i class="bi bi-cart3"></i>
+
+                        <span
+                            id="cart-count"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark"
+                        >
+                            0
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ============================================
+         WISHLIST CONTENT
+         ============================================ -->
+
+    <main class="container py-5">
+
+
+        <!-- Page Title -->
+
+        <div class="text-center mb-5">
+
+            <h2
+                class="text-uppercase fw-bold text-gold"
+                data-i18n="wishlistTitle"
+            >
+                My Wishlist
+            </h2>
+
+        </div>
+
+
+        <!-- Wishlist Products -->
+
+        <div
+            id="wishlist-container"
+            class="row row-cols-1 row-cols-md-3 g-4 justify-content-center"
+        >
+        </div>
+
+
+        <!-- Back To Shopping -->
+
+        <div class="text-center mt-5">
+
+            <a
+                href="shop velora2.html"
+                class="btn fw-bold text-dark px-5 py-2"
+                style="
+                    background-color:#d1b86c;
+                    border-color:#d1b86c;
+                "
+                data-i18n="backToShopping"
+            >
+                Back To Shopping
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+
+    <footer
+        class="bg-black text-white text-center py-4 border-top border-secondary mt-5"
+    >
+
+        <div class="container">
+
+            <p class="mb-1 text-white-50">
+
+                <span data-i18n="footerRights">
+                    All Rights Reserved
+                </span>
+
+                &copy; 2026
+
+                <span data-i18n="footerForWebsite">
+                    For Website
+                </span>
+
+                <span class="text-gold fw-bold">
+                    VELORA
+                </span>
+
+            </p>
+
+
+            <p class="mb-0 fs-6">
+
+                <span data-i18n="developedDesigned">
+                    Developed and Designed by
+                </span>
+
+                💻 ✨
+
+                <span
+                    class="text-gold fw-bold border-bottom border-warning pb-1 ms-1"
+                >
+                    Eman Ahmad
+                </span>
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+
+    <!-- Wishlist JS -->
+
+    <script>
+
+        // ============================================
+        // 1. CURRENT LANGUAGE
+        // ============================================
+
+        let currentLanguage =
+            localStorage.getItem("veloraLanguage") || "en";
+
+
+        // ============================================
+        // 2. TRANSLATIONS
+        // ============================================
+
+        const translations = {
+
+            en: {
+
+                navHome: "Home",
+                navShop: "Shop",
+                navWomen: "Women",
+                navMen: "Men",
+                navKids: "Kids",
+                navNewArrivals: "New Arrivals",
+
+                wishlistTitle: "My Wishlist",
+
+                backToShopping: "Back To Shopping",
+
+                emptyWishlist:
+                    "No items in your Wishlist yet.",
+
+                removeWishlist:
+                    "Remove from Wishlist",
+
+                viewProduct:
+                    "View Product",
+
+                removed:
+                    "Product removed from Wishlist.",
+
+                login: "Login",
+                wishlist: "Wishlist",
+                cart: "Cart",
+
+                footerRights:
+                    "All Rights Reserved",
+
+                footerForWebsite:
+                    "For Website",
+
+                developedDesigned:
+                    "Developed and Designed by"
+
+            },
+
+
+            ar: {
+
+                navHome: "الرئيسية",
+                navShop: "المتجر",
+                navWomen: "نساء",
+                navMen: "رجال",
+                navKids: "أطفال",
+                navNewArrivals: "وصل حديثًا",
+
+                wishlistTitle: "المفضلة",
+
+                backToShopping:
+                    "العودة للتسوق",
+
+                emptyWishlist:
+                    "لا توجد منتجات في المفضلة حتى الآن.",
+
+                removeWishlist:
+                    "حذف من المفضلة",
+
+                viewProduct:
+                    "عرض المنتج",
+
+                removed:
+                    "تم حذف المنتج من المفضلة.",
+
+                login:
+                    "تسجيل الدخول",
+
+                wishlist:
+                    "المفضلة",
+
+                cart:
+                    "السلة",
+
+                footerRights:
+                    "جميع الحقوق محفوظة",
+
+                footerForWebsite:
+                    "لموقع",
+
+                developedDesigned:
+                    "تم التطوير والتصميم بواسطة"
+
+            }
+
+        };
+
+
+        // ============================================
+        // 3. GET PRODUCT NAME
+        // ============================================
+
+        function getProductName(product) {
+
+            if (product.nameTranslations) {
+
+                return (
+                    product.nameTranslations[currentLanguage] ||
+                    product.nameTranslations.en ||
+                    product.name ||
+                    ""
+                );
+
+            }
+
+            return product.name || "";
+
+        }
+
+
+        // ============================================
+        // 4. FORMAT PRICE
+        // ============================================
+
+        function formatPrice(price) {
+
+            const numericPrice =
+                Number.parseInt(price, 10);
+
+
+            if (Number.isNaN(numericPrice)) {
+
+                return price;
+
+            }
+
+
+            return `${numericPrice} EGP`;
+
+        }
+
+
+        // ============================================
+        // 5. GET WISHLIST
+        // ============================================
+
+        function getWishlist() {
+
+            return (
+                JSON.parse(
+                    localStorage.getItem("veloraWishlist")
+                ) || []
+            );
+
+        }
+
+
+        // ============================================
+        // 6. RENDER WISHLIST
+        // ============================================
+
+        function renderWishlist() {
+
+            const container =
+                document.getElementById(
+                    "wishlist-container"
+                );
+
+
+            if (!container) {
+
+                return;
+
+            }
+
+
+            const wishlist =
+                getWishlist();
+
+
+            container.innerHTML = "";
+
+
+            // Empty Wishlist
+
+            if (wishlist.length === 0) {
+
+                container.innerHTML = `
+
+                    <div class="col-12">
+
+                        <p
+                            class="text-white-50 text-center fs-5 py-5"
+                        >
+                            ${translations[currentLanguage].emptyWishlist}
+                        </p>
+
+                    </div>
+
+                `;
+
+                return;
+
+            }
+
+
+            // Products
+
+            wishlist.forEach(product => {
+
+                const col =
+                    document.createElement("div");
+
+
+                col.className =
+                    "col-12 col-md-4";
+
+
+                const productName =
+                    getProductName(product);
+
+
+                col.innerHTML = `
+
+                    <div
+                        class="card bg-dark text-white p-3 border-secondary h-100 d-flex flex-column justify-content-between"
+                        style="border-radius:0;"
+                    >
+
+                        <div>
+
+                            <!-- Product Image -->
+
+                            <img
+                                src="${product.image || ""}"
+                                class="card-img-top mb-3 img-fluid"
+                                alt="${productName}"
+                                style="
+                                    height:220px;
+                                    object-fit:cover;
+                                    cursor:pointer;
+                                "
+                                data-product-id="${product.id || ""}"
+                            >
+
+
+                            <!-- Product Name -->
+
+                            <h6
+                                class="fw-semibold mb-2 text-uppercase"
+                            >
+                                ${productName}
+                            </h6>
+
+
+                            <!-- Price -->
+
+                            <p
+                                class="fw-bold text-gold mb-3"
+                            >
+                                ${formatPrice(product.price)}
+                            </p>
+
+                        </div>
+
+
+                        <!-- Buttons -->
+
+                        <div class="d-flex gap-2">
+
+                            <button
+                                type="button"
+                                class="btn btn-outline-warning btn-sm rounded-0 flex-fill view-product-btn"
+                                data-product-id="${product.id || ""}"
+                            >
+                                ${translations[currentLanguage].viewProduct}
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="btn btn-outline-danger btn-sm rounded-0 flex-fill remove-wishlist-btn"
+                                data-product-id="${product.id || ""}"
+                                data-product-name="${product.name || ""}"
+                            >
+                                ${translations[currentLanguage].removeWishlist}
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                `;
+
+
+                container.appendChild(col);
+
+            });
+
+
+            setupWishlistButtons();
+
+        }
+
+
+        // ============================================
+        // 7. WISHLIST BUTTON EVENTS
+        // ============================================
+
+        function setupWishlistButtons() {
+
+            const viewButtons =
+                document.querySelectorAll(
+                    ".view-product-btn"
+                );
+
+
+            viewButtons.forEach(button => {
+
+                button.addEventListener(
+                    "click",
+                    () => {
+
+                        const productId =
+                            Number(
+                                button.dataset.productId
+                            );
+
+
+                        const wishlist =
+                            getWishlist();
+
+
+                        const product =
+                            wishlist.find(
+                                item =>
+                                    item.id === productId
+                            );
+
+
+                        if (!product) {
+
+                            return;
+
+                        }
+
+
+                        localStorage.setItem(
+                            "selectedProduct",
+                            JSON.stringify(product)
+                        );
+
+
+                        window.location.href =
+                            "product-details velora2.html";
+
+                    }
+                );
+
+            });
+
+
+            const imageElements =
+                document.querySelectorAll(
+                    "[data-product-id]"
+                );
+
+
+            imageElements.forEach(element => {
+
+                if (
+                    !element.classList.contains(
+                        "remove-wishlist-btn"
+                    ) &&
+                    !element.classList.contains(
+                        "view-product-btn"
+                    )
+                ) {
+
+                    element.addEventListener(
+                        "click",
+                        () => {
+
+                            const productId =
+                                Number(
+                                    element.dataset.productId
+                                );
+
+
+                            const wishlist =
+                                getWishlist();
+
+
+                            const product =
+                                wishlist.find(
+                                    item =>
+                                        item.id === productId
+                                );
+
+
+                            if (!product) {
+
+                                return;
+
+                            }
+
+
+                            localStorage.setItem(
+                                "selectedProduct",
+                                JSON.stringify(product)
+                            );
+
+
+                            window.location.href =
+                                "product-details velora2.html";
+
+                        }
+                    );
+
+                }
+
+            });
+
+
+            const removeButtons =
+                document.querySelectorAll(
+                    ".remove-wishlist-btn"
+                );
+
+
+            removeButtons.forEach(button => {
+
+                button.addEventListener(
+                    "click",
+                    () => {
+
+                        const productId =
+                            Number(
+                                button.dataset.productId
+                            );
+
+
+                        removeItem(productId);
+
+                    }
+                );
+
+            });
+
+        }
+
+
+        // ============================================
+        // 8. REMOVE ITEM
+        // ============================================
+
+        function removeItem(productId) {
+
+            let wishlist =
+                getWishlist();
+
+
+            wishlist =
+                wishlist.filter(
+                    item =>
+                        item.id !== productId
+                );
+
+
+            localStorage.setItem(
+                "veloraWishlist",
+                JSON.stringify(wishlist)
+            );
+
+
+            renderWishlist();
+
+        }
+
+
+        // ============================================
+        // 9. APPLY LANGUAGE
+        // ============================================
+
+        function applyLanguage() {
+
+            document.documentElement.lang =
+                currentLanguage;
+
+
+            document.documentElement.dir =
+                currentLanguage === "ar"
+                    ? "rtl"
+                    : "ltr";
+
+
+            const languageData =
+                translations[currentLanguage];
+
+
+            document
+                .querySelectorAll("[data-i18n]")
+                .forEach(element => {
+
+                    const key =
+                        element.dataset.i18n;
+
+
+                    if (languageData[key]) {
+
+                        element.textContent =
+                            languageData[key];
+
+                    }
+
+                });
+
+
+            document
+                .querySelectorAll("[data-i18n-title]")
+                .forEach(element => {
+
+                    const key =
+                        element.dataset.i18nTitle;
+
+
+                    if (languageData[key]) {
+
+                        element.title =
+                            languageData[key];
+
+                    }
+
+                });
+
+
+            const languageButton =
+                document.getElementById(
+                    "languageToggle"
+                );
+
+
+            if (languageButton) {
+
+                languageButton.textContent =
+                    currentLanguage === "en"
+                        ? "AR"
+                        : "EN";
+
+            }
+
+
+            renderWishlist();
+
+        }
+
+
+        // ============================================
+        // 10. LANGUAGE TOGGLE
+        // ============================================
+
+        function setupLanguageToggle() {
+
+            const languageButton =
+                document.getElementById(
+                    "languageToggle"
+                );
+
+
+            if (!languageButton) {
+
+                return;
+
+            }
+
+
+            languageButton.addEventListener(
+                "click",
+                () => {
+
+                    currentLanguage =
+                        currentLanguage === "en"
+                            ? "ar"
+                            : "en";
+
+
+                    localStorage.setItem(
+                        "veloraLanguage",
+                        currentLanguage
+                    );
+
+
+                    applyLanguage();
+
+                }
+            );
+
+        }
+
+
+        // ============================================
+        // 11. CART COUNT
+        // ============================================
+
+        function updateCartCount() {
+
+            const cartCount =
+                document.getElementById(
+                    "cart-count"
+                );
+
+
+            if (!cartCount) {
+
+                return;
+
+            }
+
+
+            const cart =
+                JSON.parse(
+                    localStorage.getItem("veloraCart")
+                ) || [];
+
+
+            const totalQuantity =
+                cart.reduce(
+                    (total, item) =>
+                        total +
+                        Number(item.quantity || 1),
+                    0
+                );
+
+
+            cartCount.textContent =
+                totalQuantity;
+
+        }
+
+
+        // ============================================
+        // 12. PAGE START
+        // ============================================
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            () => {
+
+                applyLanguage();
+
+                setupLanguageToggle();
+
+                updateCartCount();
+
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>
